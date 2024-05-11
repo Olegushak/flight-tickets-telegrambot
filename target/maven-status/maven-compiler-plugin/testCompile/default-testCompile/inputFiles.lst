@@ -1,0 +1,8 @@
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\command\AbstractCommandTest.java
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\command\CommandContainerTest.java
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\command\NoCommandTest.java
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\command\HelpCommandTest.java
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\command\StartCommandNameTest.java
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\command\UnknownCommandTest.java
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\FlightTicketsTelegrambotApplicationTests.java
+C:\flight-tickets-telegrambot\src\test\java\com\github\olegushak\FTT\service\SendBotMessageServiceTest.java
