@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  ftt:
+    build:
+      context: .
+    environment:
+     - TELEGRAM_NAME
+     - TELEGRAM_TOKEN
+    restart: always
