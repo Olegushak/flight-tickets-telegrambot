@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Connect to PostgreSQL
-      uses: harmon758/postgresql-action@v1.1
+      uses: harmon758/postgresql-action@v1
       with:
         postgresql version: '14.3-alpine3.16'
         postgresql db: 'dev_ftt_db'
