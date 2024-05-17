@@ -19,13 +19,13 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Connect to PostgreSQL
+    - name: Connect to PostgresSQL
       uses: ikalnytskyi/action-setup-postgres@v6
       with:
         postgresql version: '14.3-alpine3.16'
-        postgresql db: 'dev_ftt_db'
-        postgresql user: 'test'
-        postgresql password: 'test_password'
+        postgres_db: 'dev_ftt_db'
+        postgres_user: 'test'
+        postgres_password: 'test_password'
     - name: Set up JDK 20
       uses: actions/setup-java@v3
       with:
