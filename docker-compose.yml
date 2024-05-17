@@ -1,10 +1,25 @@
-version: '3.1'
+version: '3.5'
 
 services:
-  ftt:
+  ftt-bot:
+    depends_on:
+      - ftt-db
     build:
       context: .
     environment:
-     - TELEGRAM_NAME
-     - TELEGRAM_TOKEN
+     TELEGRAM_NAME: ${TELEGRAM_NAME}
+     TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
+     BOT_DB_USERNAME: ${BOT_DB_USERNAME}
+     BOT_DB_PASSWORD: ${BOT_DB_PASSWORD}
     restart: always
+  ftt-db:
+    image: postgres:14.3-alpine3.16
+    restart: always
+    environment:
+      POSTGRES_DB: "ftt_db"
+      POSTGRES_USER: ${BOT_DB_USERNAME}
+      POSTGRES_PASSWORD: ${BOT_DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"

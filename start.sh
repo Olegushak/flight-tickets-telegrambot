@@ -10,7 +10,6 @@ mvn package
 # Ensure, that docker-compose stopped
 docker-compose stop
 
-# Add environment variables
 export TELEGRAM_NAME=$1
 export TELEGRAM_TOKEN=$2
 
