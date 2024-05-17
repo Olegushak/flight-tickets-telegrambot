@@ -35,7 +35,7 @@ public class TelegramUserRepositoryIT {
     public void shouldProperlySaveTelegramUser(){
 
         TelegramUser telegramUser = new TelegramUser();
-        telegramUser.setChatId("1234567890");
+        telegramUser.setChatId("123456789");
         telegramUser.setActive(false);
         telegramUserRepository.save(telegramUser);
 
