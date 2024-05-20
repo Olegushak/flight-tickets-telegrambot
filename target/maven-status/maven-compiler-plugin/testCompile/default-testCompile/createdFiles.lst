@@ -1,8 +1,11 @@
-com\github\olegushak\FTT\service\SendBotMessageServiceTest.class
 com\github\olegushak\FTT\command\AbstractCommandTest.class
 com\github\olegushak\FTT\command\NoCommandTest.class
-com\github\olegushak\FTT\command\CommandContainerTest.class
 com\github\olegushak\FTT\command\HelpCommandTest.class
+com\github\olegushak\FTT\command\StopCommandTest.class
+com\github\olegushak\FTT\service\SendBotMessageServiceTest.class
+com\github\olegushak\FTT\command\CommandContainerTest.class
+com\github\olegushak\FTT\repository\TelegramUserRepositoryIT.class
+com\github\olegushak\FTT\command\StatCommandTest.class
 com\github\olegushak\FTT\command\UnknownCommandTest.class
 com\github\olegushak\FTT\FlightTicketsTelegrambotApplicationTests.class
 com\github\olegushak\FTT\command\StartCommandNameTest.class

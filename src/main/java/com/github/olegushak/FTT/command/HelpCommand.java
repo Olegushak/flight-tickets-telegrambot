@@ -5,6 +5,8 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 import static com.github.olegushak.FTT.command.CommandName.HELP;
 import static com.github.olegushak.FTT.command.CommandName.START;
+import static com.github.olegushak.FTT.command.CommandName.STAT;
+import static com.github.olegushak.FTT.command.CommandName.STOP;
 
 public class HelpCommand implements Command{
 
@@ -14,8 +16,10 @@ public class HelpCommand implements Command{
 
             + "<b>Начать\\закончить работу с ботом</b>\n"
             + "%s - начать работу со мной\n"
-            + "%s - получить помощь в работе со мной\n",
-            START.getCommandName(),HELP.getCommandName());
+            + "%s - приостановить работу со мной\n"
+            + "%s - получить помощь в работе со мной\n"
+            + "%s - получить статистику",
+            START.getCommandName(),STOP.getCommandName(),HELP.getCommandName(),STAT.getCommandName());
 
     public  HelpCommand(SendBotMessageService sendBotMessageService) {
         this.sendBotMessageService = sendBotMessageService;
