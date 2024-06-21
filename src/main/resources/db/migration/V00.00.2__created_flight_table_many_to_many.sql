@@ -1,8 +1,4 @@
-DROP TABLE IF EXISTS flight;
-DROP TABLE IF EXISTS flight_x_user;
-
-
-CREATE TABLE flight (
+CREATE TABLE IF NOT EXISTS flight (
     id varchar(100) PRIMARY KEY,
     departure_airport varchar(100) NOT NULL ,
     from_country varchar(100) NOT NULL ,
@@ -17,7 +13,7 @@ CREATE TABLE flight (
     token varchar(100) NOT NULL
 );
 
-CREATE TABLE flight_x_user (
+CREATE TABLE IF NOT EXISTS flight_x_user (
     flight_id VARCHAR(100) NOT NULL,
     user_id VARCHAR(100) NOT NULL,
     FOREIGN KEY(user_id) REFERENCES tg_user(chat_id),
