@@ -1,5 +1,10 @@
 # Release notes
 
+## 0.4.0-SNAPSHOT
+
+* added the possibility to get the all available tickets for one way flight
+* added the possibility to get the all available tickets for round-trip flight
+
 ## 0.3.0-SNAPSHOT
 
 * added repository layer.

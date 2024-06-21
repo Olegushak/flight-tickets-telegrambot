@@ -2,12 +2,15 @@ package com.github.olegushak.FTT.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
-import lombok.ToString;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-@ToString(callSuper = true)
-public class FlightDetailsDto {
+public class FlightResponseDto {
 
-    private DetailedItineraryDto itinerary;
+    private FlightDto data;
+
+    private boolean status;
+
+    private String message;
 }
+

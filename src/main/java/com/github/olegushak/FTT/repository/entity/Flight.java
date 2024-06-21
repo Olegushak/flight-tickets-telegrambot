@@ -1,7 +1,10 @@
 package com.github.olegushak.FTT.repository.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,13 +22,16 @@ import java.util.List;
 @Entity
 @Table(name = "flight")
 @EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Flight {
 
     @Id
     private String id;
 
     @Column(name = "departure_airport")
-    private String departureAirport;
+    private String departure;
 
     @Column(name = "from_country")
     private String fromCountry;
@@ -34,7 +40,7 @@ public class Flight {
     private String fromCity;
 
     @Column(name = "destination_airport")
-    private String destinationAirport;
+    private String destination;
 
     @Column(name = "to_country")
     private String toCountry;
@@ -65,6 +71,7 @@ public class Flight {
     )
 
     private List<TelegramUser> users;
+
 
     public void addUser(TelegramUser telegramUser) {
         if(isNull(users)) {

@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.Map;
 
 @DisplayName("Integration-level testing for FttLocalisationClientImplTest")
 @ActiveProfiles("test")
@@ -20,16 +20,17 @@ public class LocalisationClientTest {
 
     @Test
     public void shouldRetrieveLocalisations(){
-        List<LocalisationDto> localisationList = null;
+
+        Map <String, LocalisationDto> localisations = null;
         try {
-            localisationList = localisationClient.retrieveLocalisations();
+            localisations = localisationClient.retrieveLocalisations();
         } catch (IOException e){
             e.printStackTrace();
         }
 
         //then
-        Assertions.assertNotNull(localisationList);
-        Assertions.assertFalse(localisationList.isEmpty());
+        Assertions.assertNotNull(localisations);
+        Assertions.assertFalse(localisations.isEmpty());
     }
 
 }

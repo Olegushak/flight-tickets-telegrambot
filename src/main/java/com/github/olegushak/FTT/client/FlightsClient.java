@@ -1,17 +1,19 @@
 package com.github.olegushak.FTT.client;
 
 import com.github.olegushak.FTT.dto.FlightDetailsDto;
-import com.github.olegushak.FTT.dto.FlightsDto;
+import com.github.olegushak.FTT.dto.FlightDto;
+import com.github.olegushak.FTT.dto.FlightRequestArgs;
+
 
 import java.io.IOException;
 
 public interface FlightsClient {
 
-    FlightsDto retrieveOneWayFlights(String fromEntityId, String toEntityId, String departDate) throws IOException;
+    FlightDto retrieveOneWayFlights(FlightRequestArgs flightRequestArgs) throws IOException;
 
-    FlightsDto retrieveRoundTripFlights(String fromEntityId, String toEntityId, String departDate, String returnDate) throws IOException;
+    FlightDto retrieveRoundTripFlights(FlightRequestArgs flightRequestArgs) throws IOException;
 
-    FlightDetailsDto retrieveFlightDetails(String token, String itineraryId) throws IOException;
+    FlightDetailsDto retrieveFlightDetails(FlightRequestArgs flightRequestArgs) throws IOException;
 
 
 

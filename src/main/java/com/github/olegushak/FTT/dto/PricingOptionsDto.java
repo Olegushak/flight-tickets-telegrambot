@@ -11,11 +11,5 @@ public class PricingOptionsDto {
 
     private List<AgentDto> agents;
 
-    private int totalPrice;
-
-    private boolean isTransferRequired;
-
-    private String destinationImage;
-
-
+    private double totalPrice;
 }

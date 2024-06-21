@@ -10,4 +10,8 @@ import java.util.List;
 public class DetailedItineraryDto {
 
     private List<PricingOptionsDto> pricingOptions;
+
+    private boolean isTransferRequired;
+
+    private String destinationImage;
 }

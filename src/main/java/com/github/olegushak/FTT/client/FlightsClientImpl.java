@@ -1,74 +1,55 @@
 package com.github.olegushak.FTT.client;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.olegushak.FTT.dto.DetailsResponseDto;
 import com.github.olegushak.FTT.dto.FlightDetailsDto;
-import com.github.olegushak.FTT.dto.FlightsDto;
-import com.github.olegushak.FTT.service.UniRestService;
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
-import org.apache.http.HttpStatus;
+import com.github.olegushak.FTT.dto.FlightDto;
+import com.github.olegushak.FTT.dto.FlightRequestArgs;
+import com.github.olegushak.FTT.dto.FlightResponseDto;
+import kong.unirest.UnirestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.io.IOException;
-
-import static com.github.olegushak.FTT.service.UniRestServiceImpl.FLIGHT_DETAILS;
-import static com.github.olegushak.FTT.service.UniRestServiceImpl.JSON_KEY;
-import static com.github.olegushak.FTT.service.UniRestServiceImpl.SEARCH_ONE_WAY_FORMAT;
-import static com.github.olegushak.FTT.service.UniRestServiceImpl.SEARCH_ROUND_TRIP_FORMAT;
 
 @Component
 public class FlightsClientImpl implements FlightsClient{
 
-    private final UniRestService uniRestService;
+    private final UnirestInstance unirest;
+    public static final String SEARCH_ONE_WAY_FORMAT = "/flights/search-one-way";
+    public static final String SEARCH_ROUND_TRIP_FORMAT = "/flights/search-roundtrip";
+    public static final String FLIGHT_DETAILS = "/flights/detail";
 
-    private final ObjectMapper objectMapper;
+    private static final String HOST = "https://sky-scanner3.p.rapidapi.com";
 
     @Autowired
-    public FlightsClientImpl(UniRestService uniRestService, ObjectMapper objectMapper) {
-        this.uniRestService = uniRestService;
-        this.objectMapper = objectMapper;
-    }
-
-
-    @Override
-    public FlightsDto retrieveOneWayFlights(String fromEntityId, String toEntityId, String departDate) throws IOException {
-        HttpResponse<JsonNode> response = uniRestService.get(String.format(SEARCH_ONE_WAY_FORMAT,fromEntityId,toEntityId,departDate));
-        if (response.getStatus() != HttpStatus.SC_OK) {
-            return null;
-        }
-
-        String jsonList = response.getBody().getObject().get(JSON_KEY).toString();
-
-        return objectMapper.readValue(jsonList, new TypeReference<>() {
-        });
+    public FlightsClientImpl(UnirestInstance unirest){
+        this.unirest = unirest;
     }
 
     @Override
-    public FlightsDto retrieveRoundTripFlights(String fromEntityId, String toEntityId, String departDate, String returnDate) throws IOException {
-        HttpResponse<JsonNode> response = uniRestService.get(String.format(SEARCH_ROUND_TRIP_FORMAT,fromEntityId,toEntityId,departDate,returnDate));
-        if (response.getStatus() != HttpStatus.SC_OK) {
-            return null;
-        }
-
-        String jsonList = response.getBody().getObject().get(JSON_KEY).toString();
-
-        return objectMapper.readValue(jsonList, new TypeReference<>() {
-        });
+    public FlightDto retrieveOneWayFlights(FlightRequestArgs flightRequestArgs)  {
+        FlightResponseDto response = unirest.get(HOST + SEARCH_ONE_WAY_FORMAT)
+                .queryString(flightRequestArgs.populateQueries())
+                .asObject(FlightResponseDto.class)
+                .getBody();
+        return response.getData();
     }
 
     @Override
-    public FlightDetailsDto retrieveFlightDetails(String token, String itineraryId) throws IOException{
-        HttpResponse<JsonNode> response = uniRestService.get(String.format(FLIGHT_DETAILS,token,itineraryId));
-        if (response.getStatus() != HttpStatus.SC_OK) {
-            return null;
-        }
+    public FlightDto retrieveRoundTripFlights(FlightRequestArgs flightRequestArgs) {
+        FlightResponseDto response = unirest.get(HOST + SEARCH_ROUND_TRIP_FORMAT)
+                .queryString(flightRequestArgs.populateQueries())
+                .asObject(FlightResponseDto.class)
+                .getBody();
 
-        String jsonList = response.getBody().getObject().get(JSON_KEY).toString();
+        return response.getData();
+    }
 
-        return objectMapper.readValue(jsonList, new TypeReference<>() {
-        });
+    @Override
+    public FlightDetailsDto retrieveFlightDetails(FlightRequestArgs flightRequestArgs) {
+        DetailsResponseDto response = unirest.get(HOST + FLIGHT_DETAILS)
+                .queryString(flightRequestArgs.populateQueries())
+                .asObject(DetailsResponseDto.class)
+                .getBody();
+        return response.getData();
     }
 
 }
