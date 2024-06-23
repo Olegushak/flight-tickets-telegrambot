@@ -1,5 +1,7 @@
 package com.github.olegushak.FTT.command;
 
+import com.github.olegushak.FTT.client.FlightsClient;
+import com.github.olegushak.FTT.service.FlightService;
 import com.github.olegushak.FTT.service.SendBotMessageService;
 import com.github.olegushak.FTT.service.TelegramUserService;
 import org.junit.jupiter.api.Assertions;
@@ -19,7 +21,12 @@ public class CommandContainerTest {
     public void init() {
         SendBotMessageService sendBotMessageService = Mockito.mock(SendBotMessageService.class);
         TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
-        commandContainer = new CommandContainer(sendBotMessageService,telegramUserService);
+        FlightsClient flightsClient = Mockito.mock(FlightsClient.class);
+        FlightService flightService = Mockito.mock(FlightService.class);
+        commandContainer = new CommandContainer(sendBotMessageService,
+                telegramUserService,
+                flightsClient,
+                flightService);
     }
 
     @Test

@@ -11,6 +11,7 @@ services:
      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
      BOT_DB_USERNAME: ${BOT_DB_USERNAME}
      BOT_DB_PASSWORD: ${BOT_DB_PASSWORD}
+     RAPID_API_KEY: ${RAPID_API_KEY}
     restart: always
   ftt-db:
     image: postgres:14.3-alpine3.16

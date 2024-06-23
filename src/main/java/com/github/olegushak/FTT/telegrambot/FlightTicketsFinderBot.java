@@ -1,6 +1,8 @@
 package com.github.olegushak.FTT.telegrambot;
 
+import com.github.olegushak.FTT.client.FlightsClient;
 import com.github.olegushak.FTT.command.CommandContainer;
+import com.github.olegushak.FTT.service.FlightService;
 import com.github.olegushak.FTT.service.SendBotMessageServiceImpl;
 import com.github.olegushak.FTT.service.TelegramUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,8 +27,8 @@ public class FlightTicketsFinderBot extends TelegramLongPollingBot {
     private final CommandContainer commandContainer;
 
     @Autowired
-    public FlightTicketsFinderBot(TelegramUserService telegramUserService){
-        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this),telegramUserService);
+    public FlightTicketsFinderBot(TelegramUserService telegramUserService, FlightService flightService, FlightsClient flightsClient){
+        this.commandContainer = new CommandContainer(new SendBotMessageServiceImpl(this),telegramUserService,flightsClient,flightService);
     }
 
 

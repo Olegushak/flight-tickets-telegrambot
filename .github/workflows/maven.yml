@@ -39,4 +39,5 @@ jobs:
       env:
         TELEGRAM_NAME: ${{secrets.TELEGRAM_NAME}}
         TELEGRAM_TOKEN: ${{secrets.TELEGRAM_TOKEN}}
+        RAPID_API_KEY: ${{secrets.RAPID_API_KEY}}
       run: mvn -D spring.profiles.active=test  -B package --file pom.xml
