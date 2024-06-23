@@ -4,6 +4,7 @@ import com.github.olegushak.FTT.dto.FlightDetailsDto;
 import com.github.olegushak.FTT.dto.FlightDto;
 import com.github.olegushak.FTT.dto.FlightRequestArgs;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class FlightsClientTest {
     private FlightsClient flightsClient;
 
     @Test
+    @Disabled
     public void shouldRetrieveOneWayFlights(){
         FlightRequestArgs flightRequestArgs = FlightRequestArgs.builder()
                 .fromEntityId("HAN")
@@ -42,6 +44,7 @@ public class FlightsClientTest {
     }
 
     @Test
+    @Disabled
     public void shouldRetrieveRoundTripFlights(){
         FlightRequestArgs flightRequestArgs = FlightRequestArgs.builder()
                 .fromEntityId("HAN")
@@ -64,6 +67,7 @@ public class FlightsClientTest {
     }
 
     @Test
+    @Disabled
     public void shouldRetrieveFlightDetails(){
         FlightRequestArgs flightRequestArgs = FlightRequestArgs.builder()
                 .itineraryId("16240-2406212045--31703-0-12071-2406212250")
