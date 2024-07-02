@@ -1,0 +1,2344 @@
+{
+  "data": {
+    "context": {
+      "status": "incomplete",
+      "sessionId": "ClQIARJQCk4KJDBlZjAzYTQzLTAzMmEtNDc1NS04YjcxLTYwMTQ3MDJjMzlmYxACGiQ3OGRlNjkwYy1lMWY1LTQ3ZGUtYjI4ZS00N2UzMDMxMzkxNDYSKHVzc18xN2QxNjc5MS05ODZhLTRlYWEtYTdjNy05MzE5ZWIyYzVhYzI=",
+      "totalResults": 6
+    },
+    "itineraries": [
+      {
+        "id": "12071-2407171530--32611,-31757-2-16240-2407180815|16240-2407201515--31757,-31768-2-12071-2407210830",
+        "price": {
+          "raw": 355.62,
+          "formatted": "$356",
+          "pricingOptionId": "9Ffi7JgVbG21"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171530--32611,-31757-2-16240-2407180815",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1005,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T15:30:00",
+            "arrival": "2024-07-18T08:15:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32611,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                  "name": "AirAsia"
+                },
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-13311-2407171530-2407171950--32611",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "departure": "2024-07-17T15:30:00",
+                "arrival": "2024-07-17T19:50:00",
+                "durationInMinutes": 200,
+                "flightNumber": "513",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "13311-16292-2407172215-2407172335--31757",
+                "origin": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-17T22:15:00",
+                "arrival": "2024-07-17T23:35:00",
+                "durationInMinutes": 80,
+                "flightNumber": "467",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-16240-2407180700-2407180815--31757",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-18T07:00:00",
+                "arrival": "2024-07-18T08:15:00",
+                "durationInMinutes": 135,
+                "flightNumber": "304",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "16240-2407201515--31757,-31768-2-12071-2407210830",
+            "origin": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1035,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-20T15:15:00",
+            "arrival": "2024-07-21T08:30:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                },
+                {
+                  "id": -31768,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/FD.png",
+                  "name": "Thai AirAsia"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "16240-16292-2407201515-2407201820--31757",
+                "origin": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-20T15:15:00",
+                "arrival": "2024-07-20T18:20:00",
+                "durationInMinutes": 125,
+                "flightNumber": "307",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-11052-2407202040-2407202210--31768",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "DMK",
+                  "displayCode": "DMK",
+                  "parent": {
+                    "flightPlaceId": "BKKT",
+                    "displayCode": "BKK",
+                    "name": "Bangkok",
+                    "type": "City"
+                  },
+                  "name": "Don Mueang",
+                  "type": "Airport",
+                  "country": "Thailand"
+                },
+                "departure": "2024-07-20T20:40:00",
+                "arrival": "2024-07-20T22:10:00",
+                "durationInMinutes": 150,
+                "flightNumber": "350",
+                "marketingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "11052-12071-2407210640-2407210830--31768",
+                "origin": {
+                  "flightPlaceId": "DMK",
+                  "displayCode": "DMK",
+                  "parent": {
+                    "flightPlaceId": "BKKT",
+                    "displayCode": "BKK",
+                    "name": "Bangkok",
+                    "type": "City"
+                  },
+                  "name": "Don Mueang",
+                  "type": "Airport",
+                  "country": "Thailand"
+                },
+                "destination": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-21T06:40:00",
+                "arrival": "2024-07-21T08:30:00",
+                "durationInMinutes": 110,
+                "flightNumber": "642",
+                "marketingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": true,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "second_cheapest",
+          "second_shortest"
+        ],
+        "isMashUp": true,
+        "hasFlexibleOptions": false,
+        "score": 0.999
+      },
+      {
+        "id": "12071-2407170310--32213-1-16240-2407180140|16240-2407200240--32213-1-12071-2407210210",
+        "price": {
+          "raw": 340.59,
+          "formatted": "$341",
+          "pricingOptionId": "pqSqRffNdCpZ"
+        },
+        "legs": [
+          {
+            "id": "12071-2407170310--32213-1-16240-2407180140",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1350,
+            "stopCount": 1,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T03:10:00",
+            "arrival": "2024-07-18T01:40:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32213,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/49.png",
+                  "name": "IndiGo"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-10401-2407170310-2407170425--32213",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "CCU",
+                  "displayCode": "CCU",
+                  "parent": {
+                    "flightPlaceId": "ICCU",
+                    "displayCode": "CCU",
+                    "name": "Kolkata",
+                    "type": "City"
+                  },
+                  "name": "Kolkata",
+                  "type": "Airport",
+                  "country": "India"
+                },
+                "departure": "2024-07-17T03:10:00",
+                "arrival": "2024-07-17T04:25:00",
+                "durationInMinutes": 165,
+                "flightNumber": "1632",
+                "marketingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "10401-16240-2407172030-2407180140--32213",
+                "origin": {
+                  "flightPlaceId": "CCU",
+                  "displayCode": "CCU",
+                  "parent": {
+                    "flightPlaceId": "ICCU",
+                    "displayCode": "CCU",
+                    "name": "Kolkata",
+                    "type": "City"
+                  },
+                  "name": "Kolkata",
+                  "type": "Airport",
+                  "country": "India"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T20:30:00",
+                "arrival": "2024-07-18T01:40:00",
+                "durationInMinutes": 220,
+                "flightNumber": "1641",
+                "marketingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "16240-2407200240--32213-1-12071-2407210210",
+            "origin": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1410,
+            "stopCount": 1,
+            "isSmallestStops": false,
+            "departure": "2024-07-20T02:40:00",
+            "arrival": "2024-07-21T02:10:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32213,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/49.png",
+                  "name": "IndiGo"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "16240-10401-2407200240-2407200430--32213",
+                "origin": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "CCU",
+                  "displayCode": "CCU",
+                  "parent": {
+                    "flightPlaceId": "ICCU",
+                    "displayCode": "CCU",
+                    "name": "Kolkata",
+                    "type": "City"
+                  },
+                  "name": "Kolkata",
+                  "type": "Airport",
+                  "country": "India"
+                },
+                "departure": "2024-07-20T02:40:00",
+                "arrival": "2024-07-20T04:30:00",
+                "durationInMinutes": 200,
+                "flightNumber": "1642",
+                "marketingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "10401-12071-2407202150-2407210210--32213",
+                "origin": {
+                  "flightPlaceId": "CCU",
+                  "displayCode": "CCU",
+                  "parent": {
+                    "flightPlaceId": "ICCU",
+                    "displayCode": "CCU",
+                    "name": "Kolkata",
+                    "type": "City"
+                  },
+                  "name": "Kolkata",
+                  "type": "Airport",
+                  "country": "India"
+                },
+                "destination": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-20T21:50:00",
+                "arrival": "2024-07-21T02:10:00",
+                "durationInMinutes": 170,
+                "flightNumber": "1631",
+                "marketingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32213,
+                  "name": "IndiGo",
+                  "alternateId": "49",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "cheapest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.944402
+      },
+      {
+        "id": "12071-2407171530--32611,-31757-2-16240-2407180815|16240-2407200905--31757,-31768-2-12071-2407202020",
+        "price": {
+          "raw": 430.9,
+          "formatted": "$431",
+          "pricingOptionId": "neoFyKHQ6oF6"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171530--32611,-31757-2-16240-2407180815",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1005,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T15:30:00",
+            "arrival": "2024-07-18T08:15:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32611,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                  "name": "AirAsia"
+                },
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-13311-2407171530-2407171950--32611",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "departure": "2024-07-17T15:30:00",
+                "arrival": "2024-07-17T19:50:00",
+                "durationInMinutes": 200,
+                "flightNumber": "513",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "13311-16292-2407172215-2407172335--31757",
+                "origin": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-17T22:15:00",
+                "arrival": "2024-07-17T23:35:00",
+                "durationInMinutes": 80,
+                "flightNumber": "467",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-16240-2407180700-2407180815--31757",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-18T07:00:00",
+                "arrival": "2024-07-18T08:15:00",
+                "durationInMinutes": 135,
+                "flightNumber": "304",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "16240-2407200905--31757,-31768-2-12071-2407202020",
+            "origin": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 675,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-20T09:05:00",
+            "arrival": "2024-07-20T20:20:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                },
+                {
+                  "id": -31768,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/FD.png",
+                  "name": "Thai AirAsia"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "16240-16292-2407200905-2407201155--31757",
+                "origin": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-20T09:05:00",
+                "arrival": "2024-07-20T11:55:00",
+                "durationInMinutes": 110,
+                "flightNumber": "305",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-11052-2407201440-2407201620--31768",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "DMK",
+                  "displayCode": "DMK",
+                  "parent": {
+                    "flightPlaceId": "BKKT",
+                    "displayCode": "BKK",
+                    "name": "Bangkok",
+                    "type": "City"
+                  },
+                  "name": "Don Mueang",
+                  "type": "Airport",
+                  "country": "Thailand"
+                },
+                "departure": "2024-07-20T14:40:00",
+                "arrival": "2024-07-20T16:20:00",
+                "durationInMinutes": 160,
+                "flightNumber": "356",
+                "marketingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "11052-12071-2407201825-2407202020--31768",
+                "origin": {
+                  "flightPlaceId": "DMK",
+                  "displayCode": "DMK",
+                  "parent": {
+                    "flightPlaceId": "BKKT",
+                    "displayCode": "BKK",
+                    "name": "Bangkok",
+                    "type": "City"
+                  },
+                  "name": "Don Mueang",
+                  "type": "Airport",
+                  "country": "Thailand"
+                },
+                "destination": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-20T18:25:00",
+                "arrival": "2024-07-20T20:20:00",
+                "durationInMinutes": 115,
+                "flightNumber": "644",
+                "marketingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": true,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "shortest"
+        ],
+        "isMashUp": true,
+        "hasFlexibleOptions": false,
+        "score": 0.850482
+      },
+      {
+        "id": "12071-2407171530--32611,-31757-2-16240-2407180815|16240-2407200905--31757,-31768-2-12071-2407210830",
+        "price": {
+          "raw": 396.85,
+          "formatted": "$397",
+          "pricingOptionId": "QqS1CsCDb1Pq"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171530--32611,-31757-2-16240-2407180815",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1005,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T15:30:00",
+            "arrival": "2024-07-18T08:15:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32611,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                  "name": "AirAsia"
+                },
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-13311-2407171530-2407171950--32611",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "departure": "2024-07-17T15:30:00",
+                "arrival": "2024-07-17T19:50:00",
+                "durationInMinutes": 200,
+                "flightNumber": "513",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "13311-16292-2407172215-2407172335--31757",
+                "origin": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-17T22:15:00",
+                "arrival": "2024-07-17T23:35:00",
+                "durationInMinutes": 80,
+                "flightNumber": "467",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-16240-2407180700-2407180815--31757",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-18T07:00:00",
+                "arrival": "2024-07-18T08:15:00",
+                "durationInMinutes": 135,
+                "flightNumber": "304",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "16240-2407200905--31757,-31768-2-12071-2407210830",
+            "origin": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1405,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-20T09:05:00",
+            "arrival": "2024-07-21T08:30:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                },
+                {
+                  "id": -31768,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/FD.png",
+                  "name": "Thai AirAsia"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "16240-16292-2407200905-2407201155--31757",
+                "origin": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-20T09:05:00",
+                "arrival": "2024-07-20T11:55:00",
+                "durationInMinutes": 110,
+                "flightNumber": "305",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-11052-2407202040-2407202210--31768",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "DMK",
+                  "displayCode": "DMK",
+                  "parent": {
+                    "flightPlaceId": "BKKT",
+                    "displayCode": "BKK",
+                    "name": "Bangkok",
+                    "type": "City"
+                  },
+                  "name": "Don Mueang",
+                  "type": "Airport",
+                  "country": "Thailand"
+                },
+                "departure": "2024-07-20T20:40:00",
+                "arrival": "2024-07-20T22:10:00",
+                "durationInMinutes": 150,
+                "flightNumber": "350",
+                "marketingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "11052-12071-2407210640-2407210830--31768",
+                "origin": {
+                  "flightPlaceId": "DMK",
+                  "displayCode": "DMK",
+                  "parent": {
+                    "flightPlaceId": "BKKT",
+                    "displayCode": "BKK",
+                    "name": "Bangkok",
+                    "type": "City"
+                  },
+                  "name": "Don Mueang",
+                  "type": "Airport",
+                  "country": "Thailand"
+                },
+                "destination": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-21T06:40:00",
+                "arrival": "2024-07-21T08:30:00",
+                "durationInMinutes": 110,
+                "flightNumber": "642",
+                "marketingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31768,
+                  "name": "Thai AirAsia",
+                  "alternateId": "FD",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": true,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_cheapest",
+          "third_shortest"
+        ],
+        "isMashUp": true,
+        "hasFlexibleOptions": false,
+        "score": 0.618065
+      },
+      {
+        "id": "12071-2407171530--32611,-31757-2-16240-2407180815|16240-2407201515--31757,-32611-2-12071-2407211500",
+        "price": {
+          "raw": 454.1,
+          "formatted": "$455",
+          "pricingOptionId": "Mq4m4JIqkKfB"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171530--32611,-31757-2-16240-2407180815",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1005,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T15:30:00",
+            "arrival": "2024-07-18T08:15:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32611,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                  "name": "AirAsia"
+                },
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-13311-2407171530-2407171950--32611",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "departure": "2024-07-17T15:30:00",
+                "arrival": "2024-07-17T19:50:00",
+                "durationInMinutes": 200,
+                "flightNumber": "513",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "13311-16292-2407172215-2407172335--31757",
+                "origin": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-17T22:15:00",
+                "arrival": "2024-07-17T23:35:00",
+                "durationInMinutes": 80,
+                "flightNumber": "467",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-16240-2407180700-2407180815--31757",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-18T07:00:00",
+                "arrival": "2024-07-18T08:15:00",
+                "durationInMinutes": 135,
+                "flightNumber": "304",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "16240-2407201515--31757,-32611-2-12071-2407211500",
+            "origin": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1425,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-20T15:15:00",
+            "arrival": "2024-07-21T15:00:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                },
+                {
+                  "id": -32611,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                  "name": "AirAsia"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "16240-16292-2407201515-2407201820--31757",
+                "origin": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-20T15:15:00",
+                "arrival": "2024-07-20T18:20:00",
+                "durationInMinutes": 125,
+                "flightNumber": "307",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-13311-2407202045-2407202155--32611",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "departure": "2024-07-20T20:45:00",
+                "arrival": "2024-07-20T21:55:00",
+                "durationInMinutes": 70,
+                "flightNumber": "718",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "13311-12071-2407211240-2407211500--32611",
+                "origin": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "destination": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-21T12:40:00",
+                "arrival": "2024-07-21T15:00:00",
+                "durationInMinutes": 200,
+                "flightNumber": "512",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": true,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": true,
+        "hasFlexibleOptions": false,
+        "score": 0.526772
+      },
+      {
+        "id": "12071-2407171530--32611,-31757-2-16240-2407180815|16240-2407200905--31757,-32611-2-12071-2407211500",
+        "price": {
+          "raw": 495.33,
+          "formatted": "$496",
+          "pricingOptionId": "kwBCi6JcZp0Q"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171530--32611,-31757-2-16240-2407180815",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1005,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T15:30:00",
+            "arrival": "2024-07-18T08:15:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -32611,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                  "name": "AirAsia"
+                },
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-13311-2407171530-2407171950--32611",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "departure": "2024-07-17T15:30:00",
+                "arrival": "2024-07-17T19:50:00",
+                "durationInMinutes": 200,
+                "flightNumber": "513",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "13311-16292-2407172215-2407172335--31757",
+                "origin": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-17T22:15:00",
+                "arrival": "2024-07-17T23:35:00",
+                "durationInMinutes": 80,
+                "flightNumber": "467",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-16240-2407180700-2407180815--31757",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-18T07:00:00",
+                "arrival": "2024-07-18T08:15:00",
+                "durationInMinutes": 135,
+                "flightNumber": "304",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          },
+          {
+            "id": "16240-2407200905--31757,-32611-2-12071-2407211500",
+            "origin": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 1795,
+            "stopCount": 2,
+            "isSmallestStops": false,
+            "departure": "2024-07-20T09:05:00",
+            "arrival": "2024-07-21T15:00:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31757,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+                  "name": "Scoot"
+                },
+                {
+                  "id": -32611,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+                  "name": "AirAsia"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "16240-16292-2407200905-2407201155--31757",
+                "origin": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "departure": "2024-07-20T09:05:00",
+                "arrival": "2024-07-20T11:55:00",
+                "durationInMinutes": 110,
+                "flightNumber": "305",
+                "marketingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31757,
+                  "name": "Scoot",
+                  "alternateId": "TR",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "16292-13311-2407201910-2407202030--32611",
+                "origin": {
+                  "flightPlaceId": "SIN",
+                  "displayCode": "SIN",
+                  "parent": {
+                    "flightPlaceId": "SINS",
+                    "displayCode": "SIN",
+                    "name": "Singapore",
+                    "type": "City"
+                  },
+                  "name": "Singapore Changi",
+                  "type": "Airport",
+                  "country": "Singapore"
+                },
+                "destination": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "departure": "2024-07-20T19:10:00",
+                "arrival": "2024-07-20T20:30:00",
+                "durationInMinutes": 80,
+                "flightNumber": "716",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              },
+              {
+                "id": "13311-12071-2407211240-2407211500--32611",
+                "origin": {
+                  "flightPlaceId": "KUL",
+                  "displayCode": "KUL",
+                  "parent": {
+                    "flightPlaceId": "KULM",
+                    "displayCode": "KUL",
+                    "name": "Kuala Lumpur",
+                    "type": "City"
+                  },
+                  "name": "Kuala Lumpur International",
+                  "type": "Airport",
+                  "country": "Malaysia"
+                },
+                "destination": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-21T12:40:00",
+                "arrival": "2024-07-21T15:00:00",
+                "durationInMinutes": 200,
+                "flightNumber": "512",
+                "marketingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -32611,
+                  "name": "AirAsia",
+                  "alternateId": "AK",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": true,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "isMashUp": true,
+        "hasFlexibleOptions": false,
+        "score": 0.375066
+      }
+    ],
+    "messages": [],
+    "filterStats": {
+      "duration": {
+        "min": 1005,
+        "max": 1795,
+        "multiCityMin": 1680,
+        "multiCityMax": 2800
+      },
+      "airports": [
+        {
+          "city": "Hanoi",
+          "airports": [
+            {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi"
+            }
+          ]
+        },
+        {
+          "city": "Ho Chi Minh City",
+          "airports": [
+            {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City"
+            }
+          ]
+        }
+      ],
+      "carriers": [
+        {
+          "id": -32611,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/AK.png",
+          "name": "AirAsia"
+        },
+        {
+          "id": -32213,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/49.png",
+          "name": "IndiGo"
+        },
+        {
+          "id": -31757,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/TR.png",
+          "name": "Scoot"
+        },
+        {
+          "id": -31768,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/FD.png",
+          "name": "Thai AirAsia"
+        }
+      ],
+      "stopPrices": {
+        "direct": {
+          "isPresent": false
+        },
+        "one": {
+          "isPresent": true,
+          "formattedPrice": "$341"
+        },
+        "twoOrMore": {
+          "isPresent": true,
+          "formattedPrice": "$356"
+        }
+      }
+    },
+    "flightsSessionId": "0ef03a43-032a-4755-8b71-6014702c39fc",
+    "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+    "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiSEFOIiwiZCI6IlNHTiIsImQxIjoiMjAyNC0wNy0xNyIsImQyIjoiMjAyNC0wNy0yMCJ9"
+  },
+  "status": true,
+  "message": "Successful"
+}

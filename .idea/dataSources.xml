@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="dev_ftt_db@localhost" uuid="2a0d479d-33a3-41bc-be7c-cd7be28ccad8">
+    <data-source source="LOCAL" name="dev_ftt_db@localhost" uuid="c89e1621-c3ec-462a-824f-996f926e4fb0">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

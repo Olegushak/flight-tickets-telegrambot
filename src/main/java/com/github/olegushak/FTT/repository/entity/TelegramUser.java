@@ -1,6 +1,7 @@
 package com.github.olegushak.FTT.repository.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,6 +14,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "tg_user")
+@NoArgsConstructor
 public class TelegramUser {
 
     @Id

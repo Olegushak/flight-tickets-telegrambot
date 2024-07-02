@@ -7,8 +7,8 @@ services:
     container_name: dev-ftt-db
     environment:
       POSTGRES_DB: "dev_ftt_db"
-      POSTGRES_USER: 'test'
-      POSTGRES_PASSWORD: 'test_password'
+      POSTGRES_USER: 'dev'
+      POSTGRES_PASSWORD: 'dev_password'
     ports:
       - "5432:5432"
 

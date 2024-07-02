@@ -1,0 +1,1185 @@
+{
+  "data": {
+    "context": {
+      "status": "incomplete",
+      "sessionId": "ClQIARJQCk4KJGY2MGY5Y2IwLWQwMTgtNGUxYS04NDZlLWFjZDViMDM5MDE1NhACGiQyMmI2OTU4Ni0yZThmLTQ2ZmQtYmQxMi03OWQ2MDlhNGU5NmESKHVzc19hMzMzOTg3MS05NzUyLTQ2ZDItOGIwYS01ZWVjZjRkNjE5ZDc=",
+      "totalResults": 10
+    },
+    "itineraries": [
+      {
+        "id": "12071-2407171210--31705-0-16240-2407171420",
+        "price": {
+          "raw": 74.14,
+          "formatted": "$Привет из теста",
+          "pricingOptionId": "cM21wEa608R9"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171210--31705-0-16240-2407171420",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 130,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T12:10:00",
+            "arrival": "2024-07-17T14:20:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407171210-2407171420--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T12:10:00",
+                "arrival": "2024-07-17T14:20:00",
+                "durationInMinutes": 130,
+                "flightNumber": "133",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {
+        },
+        "tags": [
+          "third_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.999
+      },
+      {
+        "id": "12071-2407171350--31705-0-16240-2407171555",
+        "price": {
+          "raw": 74.14,
+          "formatted": "$75",
+          "pricingOptionId": "IVzfOX2pBwPc"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171350--31705-0-16240-2407171555",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 125,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T13:50:00",
+            "arrival": "2024-07-17T15:55:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407171350-2407171555--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T13:50:00",
+                "arrival": "2024-07-17T15:55:00",
+                "durationInMinutes": 125,
+                "flightNumber": "137",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {
+        },
+        "tags": [
+          "shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.9952
+      },
+      {
+        "id": "12071-2407171320--31705-0-16240-2407171530",
+        "price": {
+          "raw": 74.14,
+          "formatted": "$75",
+          "pricingOptionId": "xp4Yl4Nx3GyG"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171320--31705-0-16240-2407171530",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 130,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T13:20:00",
+            "arrival": "2024-07-17T15:30:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407171320-2407171530--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T13:20:00",
+                "arrival": "2024-07-17T15:30:00",
+                "durationInMinutes": 130,
+                "flightNumber": "135",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.988171
+      },
+      {
+        "id": "12071-2407171430--31705-0-16240-2407171640",
+        "price": {
+          "raw": 74.14,
+          "formatted": "$75",
+          "pricingOptionId": "vgOtJuvqqm1-"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171430--31705-0-16240-2407171640",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 130,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T14:30:00",
+            "arrival": "2024-07-17T16:40:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407171430-2407171640--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T14:30:00",
+                "arrival": "2024-07-17T16:40:00",
+                "durationInMinutes": 130,
+                "flightNumber": "171",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.97163
+      },
+      {
+        "id": "12071-2407171510--31705-0-16240-2407171720",
+        "price": {
+          "raw": 74.14,
+          "formatted": "$75",
+          "pricingOptionId": "cUC_FL6mUJgx"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171510--31705-0-16240-2407171720",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 130,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T15:10:00",
+            "arrival": "2024-07-17T17:20:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407171510-2407171720--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T15:10:00",
+                "arrival": "2024-07-17T17:20:00",
+                "durationInMinutes": 130,
+                "flightNumber": "173",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.95234
+      },
+      {
+        "id": "12071-2407172055--31705-0-16240-2407172305",
+        "price": {
+          "raw": 64.54,
+          "formatted": "$65",
+          "pricingOptionId": "unKMG3muOK0o"
+        },
+        "legs": [
+          {
+            "id": "12071-2407172055--31705-0-16240-2407172305",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 130,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T20:55:00",
+            "arrival": "2024-07-17T23:05:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407172055-2407172305--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T20:55:00",
+                "arrival": "2024-07-17T23:05:00",
+                "durationInMinutes": 130,
+                "flightNumber": "161",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "cheapest",
+          "second_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.947138
+      },
+      {
+        "id": "12071-2407172040--31705-0-16240-2407172255",
+        "price": {
+          "raw": 64.54,
+          "formatted": "$65",
+          "pricingOptionId": "fEfo-9HQo_CZ"
+        },
+        "legs": [
+          {
+            "id": "12071-2407172040--31705-0-16240-2407172255",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 135,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T20:40:00",
+            "arrival": "2024-07-17T22:55:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407172040-2407172255--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T20:40:00",
+                "arrival": "2024-07-17T22:55:00",
+                "durationInMinutes": 135,
+                "flightNumber": "157",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "second_cheapest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.942598
+      },
+      {
+        "id": "12071-2407171630--31705-0-16240-2407171840",
+        "price": {
+          "raw": 74.14,
+          "formatted": "$75",
+          "pricingOptionId": "0gOSk7dFMB1G"
+        },
+        "legs": [
+          {
+            "id": "12071-2407171630--31705-0-16240-2407171840",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 130,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T16:30:00",
+            "arrival": "2024-07-17T18:40:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407171630-2407171840--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T16:30:00",
+                "arrival": "2024-07-17T18:40:00",
+                "durationInMinutes": 130,
+                "flightNumber": "147",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.932774
+      },
+      {
+        "id": "12071-2407172200--31703-0-16240-2407180015",
+        "price": {
+          "raw": 70.4,
+          "formatted": "$71",
+          "pricingOptionId": "y4F0W1beUPpY"
+        },
+        "legs": [
+          {
+            "id": "12071-2407172200--31703-0-16240-2407180015",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 135,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T22:00:00",
+            "arrival": "2024-07-18T00:15:00",
+            "timeDeltaInDays": 1,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31703,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+                  "name": "Vietnam Airlines"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407172200-2407180015--31703",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T22:00:00",
+                "arrival": "2024-07-18T00:15:00",
+                "durationInMinutes": 135,
+                "flightNumber": "267",
+                "marketingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31703,
+                  "name": "Vietnam Airlines",
+                  "alternateId": "VN",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "third_cheapest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.92313
+      },
+      {
+        "id": "12071-2407172110--31705-0-16240-2407172320",
+        "price": {
+          "raw": 64.54,
+          "formatted": "$65",
+          "pricingOptionId": "WRIMOaWIoPM8"
+        },
+        "legs": [
+          {
+            "id": "12071-2407172110--31705-0-16240-2407172320",
+            "origin": {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi",
+              "displayCode": "HAN",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "destination": {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City",
+              "displayCode": "SGN",
+              "city": "Ho Chi Minh City",
+              "country": "Vietnam",
+              "isHighlighted": false
+            },
+            "durationInMinutes": 130,
+            "stopCount": 0,
+            "isSmallestStops": false,
+            "departure": "2024-07-17T21:10:00",
+            "arrival": "2024-07-17T23:20:00",
+            "timeDeltaInDays": 0,
+            "carriers": {
+              "marketing": [
+                {
+                  "id": -31705,
+                  "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+                  "name": "VietJet Air"
+                }
+              ],
+              "operationType": "fully_operated"
+            },
+            "segments": [
+              {
+                "id": "12071-16240-2407172110-2407172320--31705",
+                "origin": {
+                  "flightPlaceId": "HAN",
+                  "displayCode": "HAN",
+                  "parent": {
+                    "flightPlaceId": "HANV",
+                    "displayCode": "HAN",
+                    "name": "Hanoi",
+                    "type": "City"
+                  },
+                  "name": "Hanoi",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "destination": {
+                  "flightPlaceId": "SGN",
+                  "displayCode": "SGN",
+                  "parent": {
+                    "flightPlaceId": "SGNV",
+                    "displayCode": "SGN",
+                    "name": "Ho Chi Minh City",
+                    "type": "City"
+                  },
+                  "name": "Ho Chi Minh City",
+                  "type": "Airport",
+                  "country": "Vietnam"
+                },
+                "departure": "2024-07-17T21:10:00",
+                "arrival": "2024-07-17T23:20:00",
+                "durationInMinutes": 130,
+                "flightNumber": "175",
+                "marketingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                },
+                "operatingCarrier": {
+                  "id": -31705,
+                  "name": "VietJet Air",
+                  "alternateId": "4V",
+                  "allianceId": 0,
+                  "displayCode": ""
+                }
+              }
+            ]
+          }
+        ],
+        "isSelfTransfer": false,
+        "isProtectedSelfTransfer": false,
+        "farePolicy": {
+          "isChangeAllowed": false,
+          "isPartiallyChangeable": false,
+          "isCancellationAllowed": false,
+          "isPartiallyRefundable": false
+        },
+        "fareAttributes": {},
+        "tags": [
+          "cheapest",
+          "second_shortest"
+        ],
+        "isMashUp": false,
+        "hasFlexibleOptions": false,
+        "score": 0.910846
+      }
+    ],
+    "messages": [],
+    "filterStats": {
+      "duration": {
+        "min": 125,
+        "max": 135,
+        "multiCityMin": 125,
+        "multiCityMax": 135
+      },
+      "airports": [
+        {
+          "city": "Hanoi",
+          "airports": [
+            {
+              "id": "HAN",
+              "entityId": "128668079",
+              "name": "Hanoi"
+            }
+          ]
+        },
+        {
+          "city": "Ho Chi Minh City",
+          "airports": [
+            {
+              "id": "SGN",
+              "entityId": "95673379",
+              "name": "Ho Chi Minh City"
+            }
+          ]
+        }
+      ],
+      "carriers": [
+        {
+          "id": -31705,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/4V.png",
+          "name": "VietJet Air"
+        },
+        {
+          "id": -31703,
+          "logoUrl": "https://logos.skyscnr.com/images/airlines/favicon/VN.png",
+          "name": "Vietnam Airlines"
+        }
+      ],
+      "stopPrices": {
+        "direct": {
+          "isPresent": true,
+          "formattedPrice": "$65"
+        },
+        "one": {
+          "isPresent": false
+        },
+        "twoOrMore": {
+          "isPresent": false
+        }
+      }
+    },
+    "flightsSessionId": "f60f9cb0-d018-4e1a-846e-acd5b0390156",
+    "destinationImageUrl": "https://content.skyscnr.com/m/3719e8f4a5daf43d/original/Flights-Placeholder.jpg",
+    "token": "eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiSEFOIiwiZCI6IlNHTiIsImQxIjoiMjAyNC0wNy0xNyJ9"
+  },
+  "status": true,
+  "message": "Successful"
+}

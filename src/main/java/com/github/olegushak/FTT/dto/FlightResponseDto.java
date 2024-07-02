@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class FlightResponseDto {
+public class FlightResponseDto<T> {
 
-    private FlightDto data;
+    private T data;
 
     private boolean status;
 

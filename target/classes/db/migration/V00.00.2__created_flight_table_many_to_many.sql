@@ -14,9 +14,7 @@ CREATE TABLE IF NOT EXISTS flight (
 );
 
 CREATE TABLE IF NOT EXISTS flight_x_user (
-    flight_id VARCHAR(100) NOT NULL,
-    user_id VARCHAR(100) NOT NULL,
-    FOREIGN KEY(user_id) REFERENCES tg_user(chat_id),
-    FOREIGN KEY (flight_id) REFERENCES flight(id),
-    UNIQUE(user_id,flight_id)
+    flight_id VARCHAR(100) REFERENCES flight(id) ON DELETE CASCADE,
+    user_id VARCHAR(100) REFERENCES tg_user(chat_id) ON DELETE CASCADE,
+    UNIQUE(flight_id,user_id)
 );

@@ -24,6 +24,7 @@ import java.util.List;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
+
 @Builder
 public class Flight {
 

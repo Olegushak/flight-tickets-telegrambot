@@ -4,6 +4,7 @@ import com.github.olegushak.FTT.service.FlightService;
 import com.github.olegushak.FTT.service.SendBotMessageService;
 import com.github.olegushak.FTT.service.TelegramUserService;
 import com.google.common.collect.ImmutableMap;
+
 import static com.github.olegushak.FTT.command.CommandName.*;
 
 public class CommandContainer {

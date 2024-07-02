@@ -8,9 +8,9 @@ import java.util.List;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ResponseDto {
+public class ResponseDto<T> {
 
-    private List<?> data;
+    private List<T> data;
 
     private boolean status;
 
