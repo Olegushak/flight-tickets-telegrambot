@@ -2,12 +2,13 @@ package com.github.olegushak.FTT.command;
 
 import lombok.Getter;
 
+@Getter
 public enum CommandName {
     START("/start"),
     STOP("/stop"),
     HELP("/help"),
    // FIND_FLIGHT("найти билет"),
-   // FOLLOW_FLIGHT("отслеживать билет"),
+    SUBSCRIBE_TICKET("отслеживать билет"),
     NO("nocommand"),
     STAT("/stat");
    // FLIGHT_HISTORY("завершенные перелеты"),
@@ -20,7 +21,4 @@ public enum CommandName {
         this.commandName = commandName;
     }
 
-    public String getCommandName(){
-        return commandName;
-    }
 }

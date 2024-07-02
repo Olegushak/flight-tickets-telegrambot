@@ -1,0 +1,154 @@
+{
+  "data": {
+    "itinerary": {
+      "id": "12071-2407171210--31705-0-16240-2407171420",
+      "legs": [
+        {
+          "id": "12071-2407171210--31705-0-16240-2407171420",
+          "origin": {
+            "id": "12071",
+            "name": "Hanoi",
+            "displayCode": "HAN",
+            "city": "Hanoi"
+          },
+          "destination": {
+            "id": "16240",
+            "name": "Ho Chi Minh City",
+            "displayCode": "SGN",
+            "city": "Ho Chi Minh City"
+          },
+          "segments": [
+            {
+              "id": "12071-16240-2407171210-2407171420--31705",
+              "origin": {
+                "id": "12071",
+                "name": "Hanoi",
+                "displayCode": "HAN",
+                "city": "Hanoi"
+              },
+              "destination": {
+                "id": "16240",
+                "name": "Ho Chi Minh City",
+                "displayCode": "SGN",
+                "city": "Ho Chi Minh City"
+              },
+              "duration": 130,
+              "dayChange": 0,
+              "flightNumber": "VJ133",
+              "departure": "2024-07-17T12:10:00",
+              "arrival": "2024-07-17T14:20:00",
+              "marketingCarrier": {
+                "id": "-31705",
+                "name": "VietJet Air",
+                "displayCode": "VJ",
+                "displayCodeType": "IATA",
+                "brandColor": "#ce1508",
+                "logo": "https://content.skyscnr.com/047b31b75c59a0091ceabaaf504d3e73/ai-template-vietjet-air-thumb-1-xxxhdpi.png",
+                "altId": "4V"
+              },
+              "operatingCarrier": {
+                "id": "-31705",
+                "name": "VietJet Air",
+                "displayCode": "VJ",
+                "displayCodeType": "IATA",
+                "brandColor": "#ce1508",
+                "logo": "https://content.skyscnr.com/047b31b75c59a0091ceabaaf504d3e73/ai-template-vietjet-air-thumb-1-xxxhdpi.png",
+                "altId": "4V"
+              }
+            }
+          ],
+          "duration": 130,
+          "stopCount": 0,
+          "departure": "2024-07-17T12:10:00",
+          "arrival": "2024-07-17T14:20:00",
+          "dayChange": 0
+        }
+      ],
+      "pricingOptions": [
+        {
+          "agents": [
+            {
+              "id": "skyp",
+              "name": "Kiwi.com",
+              "isCarrier": false,
+              "bookingProposition": "PBOOK",
+              "url": "https://www.skyscanner.net/transport_deeplink/4.0/US/en-US/USD/skyp/1/12071.16240.2024-07-17/air/trava/flights?itinerary=flight|-31705|133|12071|2024-07-17T12:10|16240|2024-07-17T14:20|130|-|-|-&carriers=-31705&operators=-31705&passengers=1&channel=android&cabin_class=economy&fps_session_id=02edde15-9946-4b99-91f8-d7a0f33ecf7b&ticket_price=76.08&is_npt=false&is_multipart=false&client_id=skyscanner_app&request_id=c8d91e16-e6fa-4f27-b451-c67c363c53ab&q_ids=H4sIAAAAAAAA_-OS4mIpzq4sEGLmWB4nxczxoU6hYfKdLWxGTAqMAPw87ekcAAAA|3547193356142300290|2&q_sources=JACQUARD&commercial_filters=false&q_datetime_utc=2024-06-30T09:43:04&pqid=true",
+              "price": 76.08,
+              "rating": {
+                "value": 3.22,
+                "count": 5029
+              },
+              "updateStatus": "PENDING",
+              "segments": [
+                {
+                  "id": "12071-16240-2407171210-2407171420--31705",
+                  "origin": {
+                    "id": "12071",
+                    "name": "Hanoi",
+                    "displayCode": "HAN",
+                    "city": "Hanoi"
+                  },
+                  "destination": {
+                    "id": "16240",
+                    "name": "Ho Chi Minh City",
+                    "displayCode": "SGN",
+                    "city": "Ho Chi Minh City"
+                  },
+                  "duration": 130,
+                  "dayChange": 0,
+                  "flightNumber": "VJ133",
+                  "departure": "2024-07-17T12:10:00",
+                  "arrival": "2024-07-17T14:20:00",
+                  "marketingCarrier": {
+                    "id": "-31705",
+                    "name": "VietJet Air",
+                    "displayCode": "VJ",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#ce1508",
+                    "logo": "https://content.skyscnr.com/047b31b75c59a0091ceabaaf504d3e73/ai-template-vietjet-air-thumb-1-xxxhdpi.png",
+                    "altId": "4V"
+                  },
+                  "operatingCarrier": {
+                    "id": "-31705",
+                    "name": "VietJet Air",
+                    "displayCode": "VJ",
+                    "displayCodeType": "IATA",
+                    "brandColor": "#ce1508",
+                    "logo": "https://content.skyscnr.com/047b31b75c59a0091ceabaaf504d3e73/ai-template-vietjet-air-thumb-1-xxxhdpi.png",
+                    "altId": "4V"
+                  }
+                }
+              ],
+              "isDirectDBookUrl": false,
+              "quoteAge": 93.0
+            }
+          ],
+          "totalPrice": 76.08,
+          "fare": {
+            "leg_details": []
+          },
+          "id": "cM21wEa608R9"
+        }
+      ],
+      "isTransferRequired": false,
+      "destinationImage": "https://content.skyscnr.com/0012f421f0682d22815185912d6e105c/GettyImages-481711830.jpg",
+      "operatingCarrierSafetyAttributes": [
+        {
+          "carrierID": "-31705",
+          "carrierName": "VietJet Air",
+          "faceMasksCompulsory": null,
+          "aircraftDeepCleanedDaily": null,
+          "attendantsWearPPE": null,
+          "cleaningPacksProvided": null,
+          "foodServiceChanges": null,
+          "safetyUrl": null
+        }
+      ],
+      "flexibleTicketPolicies": []
+    },
+    "pollingCompleted": false,
+    "bookingSessionId": "02edde15-9946-4b99-91f8-d7a0f33ecf7b"
+  },
+  "status": true,
+  "message": "Successful"
+}
