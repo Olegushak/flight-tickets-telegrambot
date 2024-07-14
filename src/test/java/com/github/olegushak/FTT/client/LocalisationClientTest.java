@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
-import java.util.Map;
+import java.util.List;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.get;
 import static com.github.tomakehurst.wiremock.client.WireMock.getRequestedFor;
@@ -27,7 +27,7 @@ public class LocalisationClientTest extends WebIntegrationTest {
                         .withHeader("Content-Type", "application/json")
                         .withBodyFile("sc_config.json")));
 
-        Map <String, LocalisationDto> localisations = null;
+        List<LocalisationDto> localisations = null;
         try {
             localisations = localisationClient.retrieveLocalisations();
         } catch (IOException e){

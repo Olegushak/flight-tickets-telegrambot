@@ -9,6 +9,7 @@ import com.github.olegushak.FTT.dto.PriceDto;
 import com.github.olegushak.FTT.repository.FlightRepository;
 import com.github.olegushak.FTT.repository.entity.Flight;
 import com.github.olegushak.FTT.repository.entity.TelegramUser;
+import com.github.olegushak.FTT.utils.DtoMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -24,13 +25,15 @@ public class FlightServiceTest {
     private FlightRepository flightRepository;
     private TelegramUser newUser;
 
+    private final DtoMapper dtoMapper = new DtoMapper();
+
     private final static String CHAT_ID = "1";
 
     @BeforeEach
     public void init(){
         TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
         flightRepository = Mockito.mock(FlightRepository.class);
-        flightService = new FlightServiceImpl(flightRepository,telegramUserService);
+        flightService = new FlightServiceImpl(flightRepository,telegramUserService, dtoMapper);
 
         newUser = new TelegramUser();
         newUser.setActive(true);

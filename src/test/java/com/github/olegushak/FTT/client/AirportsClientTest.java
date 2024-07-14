@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
-import java.util.Map;
+import java.util.List;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.get;
 import static com.github.tomakehurst.wiremock.client.WireMock.getRequestedFor;
@@ -29,7 +29,7 @@ public class AirportsClientTest extends WebIntegrationTest {
                         .withHeader("Content-Type", "application/json")
                         .withBodyFile("airports.json")));
 
-        Map<String,AirportDto> airports = null;
+        List<AirportDto> airports = null;
         try {
             airports = airportsClient.retrieveAirports();
         } catch (IOException e){

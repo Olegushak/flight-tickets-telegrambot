@@ -1,12 +1,10 @@
 package com.github.olegushak.FTT.service;
 
-import com.github.olegushak.FTT.dto.DestinationDto;
 import com.github.olegushak.FTT.dto.ItineraryDto;
-import com.github.olegushak.FTT.dto.LegDto;
-import com.github.olegushak.FTT.dto.OriginDto;
 import com.github.olegushak.FTT.repository.FlightRepository;
 import com.github.olegushak.FTT.repository.entity.Flight;
 import com.github.olegushak.FTT.repository.entity.TelegramUser;
+import com.github.olegushak.FTT.utils.DtoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,10 +18,13 @@ public class FlightServiceImpl implements FlightService {
 
     private final TelegramUserService telegramUserService;
 
+    private final DtoMapper dtoMapper;
+
     @Autowired
-    public FlightServiceImpl(FlightRepository flightRepository, TelegramUserService telegramUserService) {
+    public FlightServiceImpl(FlightRepository flightRepository, TelegramUserService telegramUserService, DtoMapper dtoMapper) {
         this.flightRepository = flightRepository;
         this.telegramUserService = telegramUserService;
+        this.dtoMapper = dtoMapper;
     }
 
     @Override
@@ -41,30 +42,9 @@ public class FlightServiceImpl implements FlightService {
                 flightToSave.addUser(user);
             }
         } else {
-            flightToSave = toEntity(itinerary,token);
+            flightToSave = dtoMapper.flightDtoToEntity(itinerary,token);
             flightToSave.addUser(user);
         }
         flightRepository.save(flightToSave);
-    }
-
-    @Override
-    public Flight toEntity(ItineraryDto itinerary,String token){
-        LegDto leg = itinerary.getLegs().get(0);
-        OriginDto origin = leg.getOrigin();
-        DestinationDto destination = leg.getDestination();
-        return Flight.builder()
-                .id(itinerary.getId())
-                .departure(origin.getId())
-                .fromCountry(origin.getCountry())
-                .fromCity(origin.getCity())
-                .destination(destination.getId())
-                .toCountry(destination.getCountry())
-                .toCity(destination.getCity())
-                .depTime(leg.getDeparture())
-                .arrTime(leg.getArrival())
-                .duration(leg.getDurationInMinutes())
-                .price(itinerary.getPrice().getFormatted())
-                .token(token)
-                .build();
     }
 }

@@ -1,30 +1,35 @@
 package com.github.olegushak.FTT.repository.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import java.util.List;
 
 @Data
 @Entity
-@Table(name = "tg_user")
-@NoArgsConstructor
+@Table(name = "locale_config")
 @EqualsAndHashCode
-public class TelegramUser {
+@AllArgsConstructor
+@NoArgsConstructor
+
+@Builder
+public class Localisation {
 
     @Id
-    @Column(name = "chat_id")
-    private String chatId;
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @Column(name = "active")
-    private boolean active;
+    @Column(name = "country")
+    private String country;
 
     @Column(name = "market")
     private String market;
@@ -35,8 +40,8 @@ public class TelegramUser {
     @Column(name = "currency")
     private String currency;
 
-    @ManyToMany(mappedBy = "users", fetch = FetchType.EAGER)
-    private List<Flight> flights;
+    @Column(name = "site")
+    private String site;
 
 
 }

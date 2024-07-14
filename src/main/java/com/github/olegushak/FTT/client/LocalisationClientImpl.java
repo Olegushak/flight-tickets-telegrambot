@@ -7,8 +7,9 @@ import kong.unirest.UnirestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import java.util.Map;
-import java.util.stream.Collectors;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class LocalisationClientImpl implements LocalisationClient{
@@ -24,13 +25,12 @@ public class LocalisationClientImpl implements LocalisationClient{
     }
 
     @Override
-    public Map<String,LocalisationDto> retrieveLocalisations(){
+    public List<LocalisationDto> retrieveLocalisations(){
         ResponseDto<LocalisationDto> response = unirest.get(URL + LOCALISATION_FORMAT)
                 .asObject(new GenericType<ResponseDto<LocalisationDto>>() {
                 })
                 .getBody();
 
-        return response.getData().stream()
-                .collect(Collectors.toMap(LocalisationDto::getCountry, localisation -> localisation));
+        return new ArrayList<>(response.getData());
     }
 }

@@ -4,9 +4,9 @@ import com.github.olegushak.FTT.dto.AirportDto;
 
 
 import java.io.IOException;
-import java.util.Map;
+import java.util.List;
 
 public interface AirportsClient {
-    Map<String, AirportDto> retrieveAirports ()
+    List<AirportDto> retrieveAirports ()
             throws IOException;
 }
