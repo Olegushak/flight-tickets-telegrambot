@@ -31,4 +31,14 @@ public class SendBotMessageServiceImpl implements SendBotMessageService{
         }
 
     }
+
+    @Override
+    public void sendMessageWithKeyboard(SendMessage sendMessage) {
+        try {
+            flightTicketsFinderBot.execute(sendMessage);
+        } catch (TelegramApiException e) {
+            //todo add logging to the project.
+            e.printStackTrace();
+        }
+    }
 }

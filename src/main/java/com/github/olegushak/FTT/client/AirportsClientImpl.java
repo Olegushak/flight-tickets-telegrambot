@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.util.Map;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
@@ -25,7 +25,7 @@ public class AirportsClientImpl implements AirportsClient {
     }
 
     @Override
-    public Map<String, AirportDto> retrieveAirports()  {
+    public List<AirportDto> retrieveAirports()  {
         ResponseDto<AirportDto> response = unirest.get(URL + AIRPORTS_FORMAT)
                 .asObject(new GenericType<ResponseDto<AirportDto>>() {
                 })
@@ -33,6 +33,6 @@ public class AirportsClientImpl implements AirportsClient {
 
         return response.getData().stream()
                 .filter(airport -> airport.getSkyId()!= null)
-                .collect(Collectors.toMap(AirportDto::getId, airport -> airport));
+                .collect(Collectors.toList());
     }
 }

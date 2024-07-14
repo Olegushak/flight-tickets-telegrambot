@@ -11,4 +11,6 @@ public class CommandUtils {
     public static String getMessage(Update update){
         return update.getMessage().getText();
     }
+
+    public static String getUsername(Update update){return update.getMessage().getFrom().getUserName();}
 }

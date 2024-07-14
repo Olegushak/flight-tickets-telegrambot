@@ -3,9 +3,9 @@ package com.github.olegushak.FTT.client;
 import com.github.olegushak.FTT.dto.LocalisationDto;
 
 import java.io.IOException;
-import java.util.Map;
+import java.util.List;
 
 public interface LocalisationClient {
 
-    Map<String, LocalisationDto> retrieveLocalisations() throws IOException;
+    List<LocalisationDto> retrieveLocalisations() throws IOException;
 }

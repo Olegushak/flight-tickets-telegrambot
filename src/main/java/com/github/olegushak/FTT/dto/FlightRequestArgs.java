@@ -18,6 +18,9 @@ public class FlightRequestArgs {
     private final String returnDate;
     private final String token;
     private final String itineraryId;
+    private final String market;
+    private final String locale;
+    private final String currency;
 
     public Map<String, Object> populateQueries(){
 
@@ -33,6 +36,15 @@ public class FlightRequestArgs {
         }
         if(nonNull(returnDate)) {
             queries.put("returnDate", returnDate);
+        }
+        if(nonNull(market)) {
+            queries.put("market", returnDate);
+        }
+        if(nonNull(locale)) {
+            queries.put("locale",locale);
+        }
+        if(nonNull(currency)) {
+            queries.put("currency",currency);
         }
         if(nonNull(token)) {
             queries.put("token", token);
