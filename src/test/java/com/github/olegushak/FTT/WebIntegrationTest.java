@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.telegram.telegrambots.starter.TelegramBotInitializer;
 
-@SpringBootTest()
+@SpringBootTest( classes = FlightTicketsTelegrambotApplication.class)
 public class WebIntegrationTest {
 
     @MockBean

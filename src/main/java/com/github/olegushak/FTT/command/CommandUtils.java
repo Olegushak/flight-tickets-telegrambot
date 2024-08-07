@@ -8,7 +8,7 @@ public class CommandUtils {
         return update.getMessage().getChatId().toString();
     }
 
-    public static String getMessage(Update update){
+    public static String getText(Update update){
         return update.getMessage().getText();
     }
 

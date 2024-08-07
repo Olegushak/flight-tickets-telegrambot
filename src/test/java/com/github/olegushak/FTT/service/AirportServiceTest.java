@@ -1,34 +1,38 @@
 package com.github.olegushak.FTT.service;
 
+import com.github.olegushak.FTT.WebIntegrationTest;
 import com.github.olegushak.FTT.dto.AirportDto;
 
 import com.github.olegushak.FTT.repository.AirportRepository;
-import com.github.olegushak.FTT.repository.entity.Airport;
-import com.github.olegushak.FTT.utils.DtoMapper;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
 
+
+import java.util.ArrayList;
 import java.util.List;
 
 @DisplayName("Unit-level testing for AirportService")
-public class AirportServiceTest {
+public class AirportServiceTest extends WebIntegrationTest {
 
+    @Autowired
     private AirportService airportService;
 
+    @Autowired
     private AirportRepository airportRepository;
-
-    private final DtoMapper dtoMapper = new DtoMapper();
 
     @BeforeEach
     public void init(){
-        airportRepository = Mockito.mock(AirportRepository.class);
-        airportService = new AirportServiceImpl(airportRepository, dtoMapper);
+      airportRepository.deleteAll();
     }
 
     @Test
-    public void shouldProperlySaveAllAirports(){
+    public void shouldProperlyFindAirportsByCity(){
+
+        String expectedCity = "Anaa";
+        String request = "An";
 
         AirportDto airportDto1 = new AirportDto();
         airportDto1.setIata("AAA");
@@ -46,32 +50,16 @@ public class AirportServiceTest {
         airportDto2.setTime("UTC−07:00");
         airportDto2.setSkyId("ABQ");
 
-        List<AirportDto> airports = List.of(airportDto1,airportDto2);
+        List<AirportDto> airports = new ArrayList<>();
+        airports.add(airportDto1);
+        airports.add(airportDto2);
 
         airportService.saveAll(airports);
 
-        Airport expectedLAirport1 = Airport.builder()
-                .iata(airportDto1.getIata())
-                .icao(airportDto1.getIcao())
-                .name(airportDto1.getName())
-                .location(airportDto1.getLocation())
-                .time(airportDto1.getTime())
-                .skyId(airportDto1.getSkyId())
-                .build();
+        List<String> expectedAirports = airportService.search(request);
 
-        Airport expectedLAirport2 = Airport.builder()
-                .iata(airportDto2.getIata())
-                .icao(airportDto2.getIcao())
-                .name(airportDto2.getName())
-                .location(airportDto2.getLocation())
-                .time(airportDto2.getTime())
-                .skyId(airportDto2.getSkyId())
-                .build();
-
-
-
-        Mockito.verify(airportRepository).save(expectedLAirport1);
-        Mockito.verify(airportRepository).save(expectedLAirport2);
+        Assertions.assertFalse(expectedAirports.isEmpty());
+        Assertions.assertTrue(expectedAirports.get(0).contains(expectedCity));
 
     }
 }

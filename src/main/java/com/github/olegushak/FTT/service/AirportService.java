@@ -9,8 +9,10 @@ import java.util.Optional;
 public interface AirportService {
     void saveAll(List<AirportDto> airports);
 
-    Optional<Airport> findAirportByName(String name);
+    Optional<Airport> findAirportByLocation(String name);
 
     void deleteAll();
+
+    List<String> search(String airportName);
 
 }

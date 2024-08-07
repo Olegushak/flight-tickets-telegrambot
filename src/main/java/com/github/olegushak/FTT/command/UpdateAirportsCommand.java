@@ -22,6 +22,9 @@ public class UpdateAirportsCommand implements Command{
     @Override
     public void execute(Update update) {
         try {
+            System.out.println("start deleting");
+            airportService.deleteAll();
+            System.out.println("deleting finished");
             System.out.println("start updating");
             List<AirportDto> airports =  airportsClient.retrieveAirports();
             airportService.saveAll(airports);

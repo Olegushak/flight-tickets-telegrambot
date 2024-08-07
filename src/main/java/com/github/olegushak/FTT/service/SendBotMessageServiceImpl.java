@@ -20,7 +20,6 @@ public class SendBotMessageServiceImpl implements SendBotMessageService{
     public void sendMessage(String chatId, String message) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.enableHtml(true);
         sendMessage.setText(message);
 
         try {
@@ -34,6 +33,16 @@ public class SendBotMessageServiceImpl implements SendBotMessageService{
 
     @Override
     public void sendMessageWithKeyboard(SendMessage sendMessage) {
+        try {
+            flightTicketsFinderBot.execute(sendMessage);
+        } catch (TelegramApiException e) {
+            //todo add logging to the project.
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void sendMessage(SendMessage sendMessage) {
         try {
             flightTicketsFinderBot.execute(sendMessage);
         } catch (TelegramApiException e) {

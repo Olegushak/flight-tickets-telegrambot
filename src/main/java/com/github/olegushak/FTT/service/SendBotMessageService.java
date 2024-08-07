@@ -7,4 +7,7 @@ public interface SendBotMessageService {
     void sendMessage(String chatId, String message);
 
     void sendMessageWithKeyboard(SendMessage sendMessage);
+
+    void sendMessage(SendMessage sendMessage);
 }
+
