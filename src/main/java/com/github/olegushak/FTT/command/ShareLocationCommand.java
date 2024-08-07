@@ -37,7 +37,7 @@ public class ShareLocationCommand implements Command {
         String country = Coordinates2Country.country(location.getLatitude(), location.getLongitude());
         TelegramUser user = telegramUserService.findByChatId(chat_id).get();
         setLocation(user, country);
-        sendBotMessageService.sendMessageWithKeyboard(locationConformation(chat_id));
+        sendBotMessageService.sendMessageWithKeyboard(locationConformation(chat_id,country));
     }
 
     public void setLocation(TelegramUser user, String country) {
@@ -49,9 +49,9 @@ public class ShareLocationCommand implements Command {
     }
 
 
-    public SendMessage locationConformation(String chatId){
+    public SendMessage locationConformation(String chatId,String country){
         SendMessage message = new SendMessage();
-        message.setText("Your country: %s determine successfully");
+        message.setText(String.format("Your country: %s determine successfully",country));
         message.setChatId(chatId);
         message.setReplyMarkup(createInlineKeyboard(Set.of(CommandName.FIND_FLIGHT.getCommandName())));
         return message;

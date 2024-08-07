@@ -1,49 +1,43 @@
 package com.github.olegushak.FTT.repository.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+import org.springframework.data.elasticsearch.annotations.Setting;
+
 import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Data
-@Entity
-@Table(name = "airport")
-@EqualsAndHashCode
-@AllArgsConstructor
-@NoArgsConstructor
-
+@Document(indexName = "airport")
+@Setting(settingPath = "es-config/elastic-analyzer.json")
+@Setter
+@Getter
 @Builder
 public class Airport {
 
     @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Field
+    private String id;
 
-    @Column(name = "iata")
+    @Field
     private String iata;
 
-    @Column(name = "icao")
+    @Field
     private String icao;
 
-    @Column(name = "airport_name")
+    @Field
     private String name;
 
-    @Column(name = "location")
+    @Field(type = FieldType.Text, analyzer = "autocomplete_index", searchAnalyzer = "autocomplete_search")
     private String location;
 
-    @Column(name = "utc_time")
+    @Field
     private String time;
 
-    @Column(name = "skyId")
+    @Field
     private String skyId;
 
 }

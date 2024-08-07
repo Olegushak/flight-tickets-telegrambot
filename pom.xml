@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.olegushak</groupId>
 	<artifactId>flight-tickets-telegrambot</artifactId>
-	<version>0.5.0-SNAPSHOT</version>
+	<version>0.6.0-SNAPSHOT</version>
 	<name>Flight tickets telegramBot</name>
 	<description>Telegram bot for searching flight tickets</description>
 	<properties>
@@ -29,11 +29,24 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.vdurmont</groupId>
+			<artifactId>emoji-java</artifactId>
+			<version>5.1.1</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.github.tomakehurst</groupId>
 			<artifactId>wiremock-standalone</artifactId>
 			<version>2.27.2</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+			<version>2.7.18</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -66,13 +79,20 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.playtika.testcontainers/embedded-postgresql -->
 		<dependency>
 			<groupId>com.playtika.testcontainers</groupId>
 			<artifactId>embedded-postgresql</artifactId>
 			<version>3.0.0</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.playtika.testcontainers</groupId>
+			<artifactId>embedded-elasticsearch</artifactId>
+			<version>3.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
 
 		<dependency>
 			<groupId>io.github.coordinates2country</groupId>

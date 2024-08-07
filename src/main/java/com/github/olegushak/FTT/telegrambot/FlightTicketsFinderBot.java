@@ -22,8 +22,10 @@ import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScope
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import javax.annotation.PostConstruct;
+import javax.validation.constraints.NotNull;
 
 import static com.github.olegushak.FTT.command.CommandName.NO_COMMAND;
+import static com.github.olegushak.FTT.command.CommandName.SEARCH_AIRPORT;
 import static com.github.olegushak.FTT.command.CommandName.SHARE_LOCATION;
 
 
@@ -54,10 +56,12 @@ public class FlightTicketsFinderBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
-        if (update.hasMessage()) {
+        if ((update.hasMessage())) {
             Message message = update.getMessage();
             if (message.hasLocation()) {
                 commandContainer.retrieveCommand(SHARE_LOCATION.getCommandName()).execute(update);
+            } else if(message.isReply()) {
+                commandContainer.retrieveCommand(SEARCH_AIRPORT.getCommandName()).execute(update);
             } else if (message.hasText() && message.getText().startsWith(COMMAND_PREFIX) ){
             String text = message.getText().trim();
             String commandIdentifier = text.split(" ")[0].toLowerCase();
