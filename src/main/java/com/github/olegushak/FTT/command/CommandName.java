@@ -4,25 +4,28 @@ import lombok.Getter;
 
 @Getter
 public enum CommandName {
-    START("/start"),
-    STOP("/stop"),
-    HELP("/help"),
-    FIND_FLIGHT("find flight"),
-    SUBSCRIBE_TICKET("subscribe to ticket"),
-    NO_COMMAND("no command"),
-    STAT("/stat"),
-    SEARCH_AIRPORT("/search airport"),
-    SHARE_LOCATION("/share location"),
-    UPDATE_LOCALISATIONS("/update_localisations"),
-    UPDATE_AIRPORTS("/update_airports");
+    START("/start", "Start bot"),
+    STOP("/stop", "Stop bot"),
+    HELP("/help", "Bot information"),
+    FIND_FLIGHT("/find flight", "Find flight"),
+    SUBSCRIBE_TICKET("subscribe to ticket", "title"),
+    NO_COMMAND("no command", "title"),
+    STAT("/stat", "title"),
+    SEARCH_AIRPORT("/search airport"," title"),
+    SHARE_LOCATION("/share location", "title"),
+    UPDATE_LOCALISATIONS("/update_localisations", "title"),
+    UPDATE_AIRPORTS("/update_airports", "title");
    // FLIGHT_HISTORY("завершенные перелеты"),
   //  ALL_FLIGHTS("мои перелеты"),
   //  MAIN("главное меню");
 
     private final String commandName;
+    private final String title;
+    private
 
-    CommandName(String commandName) {
+    CommandName(String commandName, String title) {
         this.commandName = commandName;
+        this.title = title;
     }
 
 }

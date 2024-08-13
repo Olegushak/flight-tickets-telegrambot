@@ -10,10 +10,11 @@ import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandNa
 import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandName.FROM;
 import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandName.RETURN;
 import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandName.TO;
-import static com.github.olegushak.FTT.utils.EmojiConst.ARR_AIRPLANE;
-import static com.github.olegushak.FTT.utils.EmojiConst.DEP_AIRPLANE;
-import static com.github.olegushak.FTT.utils.EmojiConst.DEP_DATE;
-import static com.github.olegushak.FTT.utils.EmojiConst.RETURN_DATE;
+import static com.github.olegushak.FTT.utils.Emoji.ARR_AIRPLANE;
+import static com.github.olegushak.FTT.utils.Emoji.DEP_AIRPLANE;
+import static com.github.olegushak.FTT.utils.Emoji.DEP_DATE;
+import static com.github.olegushak.FTT.utils.Emoji.RETURN_DATE;
+
 
 public class ParameterRequestCommand implements Command {
     private final SendBotMessageService sendBotMessageService;
@@ -35,16 +36,16 @@ public class ParameterRequestCommand implements Command {
         String emoji = "";
         if(data.equals(FROM.getCommandName())){
             message = SEARCH_MESSAGE;
-            emoji = DEP_AIRPLANE;
+            emoji = DEP_AIRPLANE.getPicture();
         } else if(data.equals(TO.getCommandName())){
             message = SEARCH_MESSAGE;
-            emoji = ARR_AIRPLANE;
+            emoji = ARR_AIRPLANE.getPicture();
         } else if (data.equals(DEPART.getCommandName())) {
             message = DATE_MESSAGE;
-            emoji = DEP_DATE;
+            emoji = DEP_DATE.getPicture();
         } else if (data.equals(RETURN.getCommandName())) {
             message = DATE_MESSAGE;
-            emoji = RETURN_DATE;
+            emoji = RETURN_DATE.getPicture();
         }
         sendBotMessageService.sendMessage(requestSearchParameter(chat_id,emoji + message));
 

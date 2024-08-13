@@ -2,7 +2,7 @@ package com.github.olegushak.FTT.client;
 
 import com.github.olegushak.FTT.dto.FlightDetailsDto;
 import com.github.olegushak.FTT.dto.FlightDto;
-import com.github.olegushak.FTT.dto.FlightRequestArgs;
+import com.github.olegushak.FTT.utils.FlightRequestArgs;
 
 
 import java.io.IOException;

@@ -1,5 +1,7 @@
 package com.github.olegushak.FTT.utils;
 
+import com.github.olegushak.FTT.command.CommandName;
+import com.github.olegushak.FTT.repository.entity.Airport;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
@@ -17,13 +19,13 @@ import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandNa
 
 public class TelegramHelper {
 
-    public static InlineKeyboardMarkup createInlineKeyboard(Set<String> commands) {
+    public static InlineKeyboardMarkup createInlineKeyboard(Set<CommandName> commands) {
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<InlineKeyboardButton> buttonsRow = new ArrayList<>();
-        for (String command : commands) {
+        for (CommandName command : commands) {
             InlineKeyboardButton inlineKeyboardButton = new InlineKeyboardButton();
-            inlineKeyboardButton.setText(command);
-            inlineKeyboardButton.setCallbackData(command);
+            inlineKeyboardButton.setText(command.getTitle());
+            inlineKeyboardButton.setCallbackData(command.getCommandName());
             buttonsRow.add(inlineKeyboardButton);
         }
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -46,29 +48,25 @@ public class TelegramHelper {
     }
 
     public static InlineKeyboardMarkup createSearchForm() {
-        String fromCommand = FROM.getCommandName();
-        String toCommand = TO.getCommandName();
-        String depCommand = DEPART.getCommandName();
-        String retCommand = RETURN.getCommandName();
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<InlineKeyboardButton> buttonsRow1 = new ArrayList<>();
         List<InlineKeyboardButton> buttonsRow2 = new ArrayList<>();
 
         InlineKeyboardButton fromButton = new InlineKeyboardButton();
-        fromButton.setText(fromCommand);
-        fromButton.setCallbackData(fromCommand);
+        fromButton.setText(FROM.getTitle());
+        fromButton.setCallbackData(FROM.getCommandName());
 
         InlineKeyboardButton toButton = new InlineKeyboardButton();
-        toButton.setText(toCommand);
-        toButton.setCallbackData(toCommand);
+        toButton.setText(TO.getTitle());
+        toButton.setCallbackData(TO.getCommandName());
 
         InlineKeyboardButton depButton = new InlineKeyboardButton();
-        depButton.setText(depCommand);
-        depButton.setCallbackData(depCommand);
+        depButton.setText(DEPART.getTitle());
+        depButton.setCallbackData(DEPART.getCommandName());
 
         InlineKeyboardButton retButton = new InlineKeyboardButton();
-        retButton.setText(retCommand);
-        retButton.setCallbackData(retCommand);
+        retButton.setText(RETURN.getTitle());
+        retButton.setCallbackData(RETURN.getCommandName());
 
         buttonsRow1.add(fromButton);
         buttonsRow1.add(toButton);
@@ -95,6 +93,22 @@ public class TelegramHelper {
         }
         keyboardMarkup.setKeyboard(keyboard);
         return keyboardMarkup;
+    }
+
+    public static InlineKeyboardMarkup createAirportsKeyboard(List<Airport> airports, Emoji emoji) {
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+        for (Airport airport: airports){
+            List<InlineKeyboardButton> buttonsRow = new ArrayList<>();
+            InlineKeyboardButton button = new InlineKeyboardButton();
+            button.setText(String.format("%s, %s ",airport.getName(),airport.getLocation()));
+            button.setCallbackData(String.format("%s %s ",emoji.getPicture(),airport.getIata()));
+            buttonsRow.add(button);
+            rowList.add(buttonsRow);
+        }
+        inlineKeyboardMarkup.setKeyboard(rowList);
+
+        return inlineKeyboardMarkup;
     }
 }
 

@@ -11,6 +11,7 @@ import com.github.olegushak.FTT.service.LocalisationService;
 import com.github.olegushak.FTT.service.SendBotMessageService;
 import com.github.olegushak.FTT.service.TelegramUserService;
 import com.google.common.collect.ImmutableMap;
+import org.springframework.stereotype.Component;
 
 import static com.github.olegushak.FTT.command.CommandName.*;
 import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandName.DEPART;
@@ -18,14 +19,15 @@ import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandNa
 import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandName.RETURN;
 import static com.github.olegushak.FTT.command.searchCommand.FlightFormCommandName.TO;
 
-public class CommandContainer {
+@Component
+public class MainCommandsContainer {
 
     private final ImmutableMap<String, Command> commandMap;
     private final Command unknownCommand;
 
-    public CommandContainer(SendBotMessageService sendBotMessageService, TelegramUserService telegramUserService,
-                            FlightsClient flightsClient, FlightService flightService, LocalisationService localisationService,
-                            LocalisationClient localisationClient, AirportService airportService, AirportsClient airportsClient) {
+    public MainCommandsContainer(SendBotMessageService sendBotMessageService, TelegramUserService telegramUserService,
+                                 FlightsClient flightsClient, FlightService flightService, LocalisationService localisationService,
+                                 LocalisationClient localisationClient, AirportService airportService, AirportsClient airportsClient) {
 
         commandMap = ImmutableMap.<String, Command>builder()
                 .put(START.getCommandName(), new StartCommand(sendBotMessageService,telegramUserService))

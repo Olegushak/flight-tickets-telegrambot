@@ -1,26 +1,31 @@
-package com.github.olegushak.FTT.dto;
+package com.github.olegushak.FTT.utils;
 
-import lombok.Builder;
+import com.google.common.cache.Cache;
+import com.google.common.cache.CacheBuilder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import static java.util.Objects.nonNull;
 
-@Builder
 @Getter
+@Setter
+@NoArgsConstructor()
 public class FlightRequestArgs {
 
-    private final String fromEntityId;
-    private final String toEntityId;
-    private final String departDate;
-    private final String returnDate;
-    private final String token;
-    private final String itineraryId;
-    private final String market;
-    private final String locale;
-    private final String currency;
+    private String fromEntityId;
+    private String toEntityId;
+    private String departDate;
+    private String returnDate;
+    private String token;
+    private String itineraryId;
+    private String market;
+    private String locale;
+    private String currency;
 
     public Map<String, Object> populateQueries(){
 

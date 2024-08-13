@@ -53,7 +53,7 @@ public class ShareLocationCommand implements Command {
         SendMessage message = new SendMessage();
         message.setText(String.format("Your country: %s determine successfully",country));
         message.setChatId(chatId);
-        message.setReplyMarkup(createInlineKeyboard(Set.of(CommandName.FIND_FLIGHT.getCommandName())));
+        message.setReplyMarkup(createInlineKeyboard(Set.of(CommandName.FIND_FLIGHT)));
         return message;
     }
 

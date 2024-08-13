@@ -4,15 +4,17 @@ import lombok.Getter;
 
 @Getter
 public enum FlightFormCommandName {
-    FROM("From"),
-    TO("To"),
-    DEPART("Depart date"),
-    RETURN("Return date");
+    FROM("/from", "From"),
+    TO("/to", "To"),
+    DEPART("/depart date", "Depart date"),
+    RETURN("/return date","Return date");
 
     private final String commandName;
+    private final String title;
 
 
-    FlightFormCommandName(String commandName) {
+    FlightFormCommandName(String commandName, String title) {
         this.commandName = commandName;
+        this.title = title;
     }
 }
