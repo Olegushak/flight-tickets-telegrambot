@@ -1,20 +1,17 @@
 package com.github.olegushak.FTT.utils;
 
-import com.google.common.cache.Cache;
-import com.google.common.cache.CacheBuilder;
+import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 import static java.util.Objects.nonNull;
 
 @Getter
 @Setter
-@NoArgsConstructor()
+@Builder
 public class FlightRequestArgs {
 
     private String fromEntityId;
@@ -43,7 +40,7 @@ public class FlightRequestArgs {
             queries.put("returnDate", returnDate);
         }
         if(nonNull(market)) {
-            queries.put("market", returnDate);
+            queries.put("market", market);
         }
         if(nonNull(locale)) {
             queries.put("locale",locale);

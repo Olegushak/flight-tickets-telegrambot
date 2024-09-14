@@ -2,8 +2,8 @@ package com.github.olegushak.FTT.utils;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import lombok.Setter;
-import org.springframework.context.annotation.Bean;
 
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 @Setter
@@ -28,5 +28,10 @@ public class CacheStore<T> {
         if(key != null && value != null) {
             cache.put(key, value);
         }
+    }
+
+    public void putAll(Map<String,T> values ){
+        if(values != null && !values.isEmpty())
+       cache.putAll(values);
     }
 }

@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 @AllArgsConstructor
@@ -27,8 +29,13 @@ public class LegDto {
     @JsonProperty("arrival")
     private String arrival;
 
+    @JsonProperty("stopCount")
+    private int stops;
+
     @JsonProperty("carriers")
     private CarrierDto carriers;
+
+    private List<SegmentDto> segments;
 
 
 

@@ -10,4 +10,5 @@ import java.util.Optional;
 public interface AirportRepository extends ElasticsearchRepository<Airport, String> {
 
     Optional<Airport> getAirportByLocationContaining(String city);
+
 }

@@ -15,4 +15,7 @@ public class PriceDto {
     @JsonProperty("formatted")
     private String formatted;
 
+    @JsonProperty("pricingOptionId")
+    private  String pricingOptionId;
+
 }

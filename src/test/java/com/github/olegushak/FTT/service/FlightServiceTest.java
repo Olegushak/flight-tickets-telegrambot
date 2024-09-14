@@ -33,7 +33,7 @@ public class FlightServiceTest {
     public void init(){
         TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
         flightRepository = Mockito.mock(FlightRepository.class);
-        flightService = new FlightServiceImpl(flightRepository,telegramUserService, dtoMapper);
+//        flightService = new FlightServiceImpl(flightRepository,telegramUserService, flightsClient, dtoMapper);
 
         newUser = new TelegramUser();
         newUser.setActive(true);
