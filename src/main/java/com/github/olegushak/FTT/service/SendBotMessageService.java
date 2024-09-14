@@ -1,6 +1,7 @@
 package com.github.olegushak.FTT.service;
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 
 public interface SendBotMessageService {
 
@@ -9,5 +10,7 @@ public interface SendBotMessageService {
     void sendMessageWithKeyboard(SendMessage sendMessage);
 
     void sendMessage(SendMessage sendMessage);
+
+    void sendPhoto(SendPhoto sendPhoto);
 }
 

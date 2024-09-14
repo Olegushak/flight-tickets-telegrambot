@@ -1,36 +1,22 @@
 package com.github.olegushak.FTT.utils;
 
 import com.github.olegushak.FTT.dto.AirportDto;
-import com.github.olegushak.FTT.dto.DestinationDto;
 import com.github.olegushak.FTT.dto.ItineraryDto;
-import com.github.olegushak.FTT.dto.LegDto;
 import com.github.olegushak.FTT.dto.LocalisationDto;
-import com.github.olegushak.FTT.dto.OriginDto;
 import com.github.olegushak.FTT.repository.entity.Airport;
-import com.github.olegushak.FTT.repository.entity.Flight;
+import com.github.olegushak.FTT.repository.entity.FlightReviewEntity;
 import com.github.olegushak.FTT.repository.entity.Localisation;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DtoMapper {
 
-    public Flight flightDtoToEntity(ItineraryDto itinerary, String token) {
-        LegDto leg = itinerary.getLegs().get(0);
-        OriginDto origin = leg.getOrigin();
-        DestinationDto destination = leg.getDestination();
-        return Flight.builder()
+    public FlightReviewEntity flightDtoToEntity(ItineraryDto itinerary, String token) {
+        return FlightReviewEntity.builder()
                 .id(itinerary.getId())
-                .departure(origin.getId())
-                .fromCountry(origin.getCountry())
-                .fromCity(origin.getCity())
-                .destination(destination.getId())
-                .toCountry(destination.getCountry())
-                .toCity(destination.getCity())
-                .depTime(leg.getDeparture())
-                .arrTime(leg.getArrival())
-                .duration(leg.getDurationInMinutes())
-                .price(itinerary.getPrice().getFormatted())
+                .legs(itinerary.getLegs())
                 .token(token)
+                .price(itinerary.getPrice())
                 .build();
     }
 

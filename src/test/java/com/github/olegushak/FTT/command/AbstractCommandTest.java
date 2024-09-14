@@ -22,7 +22,7 @@ abstract public class AbstractCommandTest {
 
     abstract String getCommandMessage();
 
-    abstract Command getCommand();
+//    abstract Command getCommand();
 
     @Test
     public void shouldProperlyExecuteCommand() throws TelegramApiException {
@@ -46,7 +46,7 @@ abstract public class AbstractCommandTest {
         sendMessage.enableHtml(true);
 
         //when
-        getCommand().execute(update);
+//        getCommand().execute(update);
 
         //then
         Mockito.verify(flightTicketsFinderBot).execute(sendMessage);

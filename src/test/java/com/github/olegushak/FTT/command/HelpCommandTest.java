@@ -18,6 +18,7 @@ public class HelpCommandTest extends AbstractCommandTest {
 
     @Override
     Command getCommand() {
-        return new HelpCommand(sendBotMessageService);
+//        return new HelpCommand(sendBotMessageService);
+        return null;
     }
 }

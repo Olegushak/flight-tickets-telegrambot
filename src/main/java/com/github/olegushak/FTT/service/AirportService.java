@@ -13,6 +13,6 @@ public interface AirportService {
 
     void deleteAll();
 
-    List<String> search(String airportName);
+    List<Airport> search(String airportName);
 
 }

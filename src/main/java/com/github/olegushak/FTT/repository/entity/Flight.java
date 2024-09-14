@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -29,7 +31,12 @@ import java.util.List;
 public class Flight {
 
     @Id
-    private String id;
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "itinerary_id")
+    private String itineraryId;
 
     @Column(name = "departure_airport")
     private String departure;
@@ -54,9 +61,6 @@ public class Flight {
 
     @Column(name = "arr_time")
     private String arrTime;
-
-    @Column(name = "duration")
-    private int duration;
 
     @Column(name = "price")
     private String price;

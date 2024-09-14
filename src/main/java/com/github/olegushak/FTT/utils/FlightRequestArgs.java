@@ -1,26 +1,28 @@
-package com.github.olegushak.FTT.dto;
+package com.github.olegushak.FTT.utils;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static java.util.Objects.nonNull;
 
-@Builder
 @Getter
+@Setter
+@Builder
 public class FlightRequestArgs {
 
-    private final String fromEntityId;
-    private final String toEntityId;
-    private final String departDate;
-    private final String returnDate;
-    private final String token;
-    private final String itineraryId;
-    private final String market;
-    private final String locale;
-    private final String currency;
+    private String fromEntityId;
+    private String toEntityId;
+    private String departDate;
+    private String returnDate;
+    private String token;
+    private String itineraryId;
+    private String market;
+    private String locale;
+    private String currency;
 
     public Map<String, Object> populateQueries(){
 
@@ -38,7 +40,7 @@ public class FlightRequestArgs {
             queries.put("returnDate", returnDate);
         }
         if(nonNull(market)) {
-            queries.put("market", returnDate);
+            queries.put("market", market);
         }
         if(nonNull(locale)) {
             queries.put("locale",locale);

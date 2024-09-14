@@ -1,16 +1,22 @@
 package com.github.olegushak.FTT.command;
 
+import com.github.olegushak.FTT.processor.BaseProcessor;
 import com.github.olegushak.FTT.service.SendBotMessageService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 import static com.github.olegushak.FTT.command.CommandName.HELP;
 import static com.github.olegushak.FTT.command.CommandName.START;
 import static com.github.olegushak.FTT.command.CommandName.STAT;
 import static com.github.olegushak.FTT.command.CommandName.STOP;
+import static com.github.olegushak.FTT.command.CommandUtils.getText;
 
-public class HelpCommand implements Command{
+@Service
+public class HelpCommand extends BaseProcessor {
 
-    private final SendBotMessageService sendBotMessageService;
+    @Autowired
+    private SendBotMessageService sendBotMessageService;
 
 
     public static final String HELP_MESSAGE = String.format("✨<b>Дотупные команды</b>✨\n\n"
@@ -22,12 +28,13 @@ public class HelpCommand implements Command{
             + "%s - получить статистику",
             START.getCommandName(),STOP.getCommandName(),HELP.getCommandName(),STAT.getCommandName());
 
-    public  HelpCommand(SendBotMessageService sendBotMessageService) {
-        this.sendBotMessageService = sendBotMessageService;
-    }
 
     @Override
     public void execute(Update update) {
-        sendBotMessageService.sendMessage(update.getMessage().getChatId().toString(),HELP_MESSAGE);
+        if ((update.hasMessage() && update.getMessage().hasText() && getText(update).equals(HELP.getCommandName()))) {
+            sendBotMessageService.sendMessage(update.getMessage().getChatId().toString(), HELP_MESSAGE);
+        } else {
+            getDownstreamProcessor().execute(update);
+        }
     }
 }

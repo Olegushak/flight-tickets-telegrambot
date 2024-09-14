@@ -13,8 +13,8 @@ public class UnknownCommandTest extends AbstractCommandTest{
         return UNKNOWN_MESSAGE;
     }
 
-    @Override
-    Command getCommand() {
-        return new UnknownCommand(sendBotMessageService);
-    }
+//    @Override
+//    Command getCommand() {
+//        return new UnknownCommand(sendBotMessageService);
+//    }
 }

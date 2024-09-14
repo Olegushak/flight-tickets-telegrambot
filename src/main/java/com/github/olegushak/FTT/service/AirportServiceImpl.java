@@ -52,7 +52,7 @@ public class AirportServiceImpl implements AirportService{
     }
 
     @Override
-    public List<String> search(String city) {
+    public List<Airport> search(String city) {
          MatchQueryBuilder query = new MatchQueryBuilder("location",city)
                  .operator(Operator.OR);
 
@@ -65,8 +65,8 @@ public class AirportServiceImpl implements AirportService{
                         .search(searchQuery,
                                 Airport.class,
                                 IndexCoordinates.of("airport"));
-        List<String> ticketMatches = new ArrayList<>();
-        productHits.forEach(searchHit -> ticketMatches.add(searchHit.getContent().getLocation()));
+        List<Airport> ticketMatches = new ArrayList<>();
+        productHits.forEach(searchHit -> ticketMatches.add(searchHit.getContent()));
         return ticketMatches;
 
     }

@@ -19,7 +19,7 @@ import java.util.Arrays;
 @DisplayName("Unit-level testing for CommandContainer")
 public class CommandContainerTest {
 
-    private CommandContainer commandContainer;
+    private MainCommandsContainer commandContainer;
 
     @BeforeEach
     public void init() {
@@ -32,7 +32,7 @@ public class CommandContainerTest {
         LocalisationClient localisationClient = Mockito.mock(LocalisationClient.class);
         AirportService airportService = Mockito.mock(AirportService.class);
         AirportsClient airportsClient = Mockito.mock(AirportsClient.class);
-        commandContainer = new CommandContainer(sendBotMessageService,
+        commandContainer = new MainCommandsContainer(sendBotMessageService,
                 telegramUserService,
                 flightsClient,
                 flightService,
