@@ -6,8 +6,8 @@ import lombok.Data;
 import lombok.ToString;
 
 @Data
-@ToString
-@JsonIgnoreProperties
+@ToString //TODO for what? @Data does include @ToString ?
+@JsonIgnoreProperties //TODO does it work? (ignoreUnknown=true)?
 public class AirportDto {
 
     @JsonProperty("iata")

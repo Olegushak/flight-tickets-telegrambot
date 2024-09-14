@@ -35,7 +35,7 @@ public class FlightTicketsFinderBot extends TelegramLongPollingBot {
     public static String COMMAND_PREFIX = "/";
     @Value("${telegram.name}")
     private String botUsername;
-    @Value("${telegram.token}")
+    @Value("${telegram.token}") //TODO move to properties class
     private String botToken;
     private final CommandContainer commandContainer;
 

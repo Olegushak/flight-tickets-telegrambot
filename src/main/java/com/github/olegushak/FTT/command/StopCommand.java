@@ -18,7 +18,7 @@ public class StopCommand implements Command{
 
     @Override
     public void execute(Update update) {
-        String chat_id = update.getMessage().getChatId().toString();
+        String chat_id = update.getMessage().getChatId().toString(); //TODO chat_id - bad name. in Java we use camelCase for naming - chatId
         sendBotMessageService.sendMessage(chat_id, STOP_MESSAGE);
         telegramUserService.findByChatId(chat_id)
                 .ifPresent(it -> {

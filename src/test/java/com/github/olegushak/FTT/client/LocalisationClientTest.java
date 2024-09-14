@@ -31,7 +31,7 @@ public class LocalisationClientTest extends WebIntegrationTest {
         try {
             localisations = localisationClient.retrieveLocalisations();
         } catch (IOException e){
-            e.printStackTrace();
+            e.printStackTrace(); //TODO do not use try catch in test
         }
 
         //then

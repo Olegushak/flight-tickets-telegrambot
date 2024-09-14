@@ -19,7 +19,7 @@ public class AirportsClientImpl implements AirportsClient {
     @Value("${rapid.api.url}")
     private String URL;
 
-    @Autowired
+    @Autowired // TODO replace with @RequiredArgsConstructor
     public AirportsClientImpl(UnirestInstance unirest){
         this.unirest = unirest;
     }

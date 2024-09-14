@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConstructorBinding;
 @ConstructorBinding
 @ConfigurationProperties("rapid.api")
 @Setter
-@Getter
+@Getter // TODO Use @Data instead of @Getter @Setter
 public class UnirestProperties {
     private String key;
 }

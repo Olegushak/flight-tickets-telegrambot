@@ -26,6 +26,8 @@ public class SendBotMessageServiceImpl implements SendBotMessageService{
             flightTicketsFinderBot.execute(sendMessage);
         } catch (TelegramApiException e) {
             //todo add logging to the project.
+            //TODO fix please) you can throw custom exception, and create exception handler using @ControllerAdvise?
+            //TODO also add tracing for requests. (spring-cloud, sleuth)
             e.printStackTrace();
         }
 

@@ -6,7 +6,7 @@ import com.github.olegushak.FTT.repository.entity.Airport;
 import java.util.List;
 import java.util.Optional;
 
-public interface AirportService {
+public interface AirportService { //TODO maybe we can remove useless interfaces? As I can see, most of them has only one implementation
     void saveAll(List<AirportDto> airports);
 
     Optional<Airport> findAirportByLocation(String name);

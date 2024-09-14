@@ -30,6 +30,8 @@ public class TelegramUserServiceImpl implements TelegramUserService{
 
     @Override
     public Optional<TelegramUser> findByChatId(String chat_id) {
+        //TODO maybe need to add some handling \ logging for unknown chat_id ?
+        // suggest to return not Optional, simple TelegramUser object, and log or throw exception for unknown id
         return telegramUserRepository.findById(chat_id);
     }
 }

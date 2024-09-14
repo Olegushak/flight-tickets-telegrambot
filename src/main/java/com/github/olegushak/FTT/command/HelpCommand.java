@@ -11,7 +11,7 @@ import static com.github.olegushak.FTT.command.CommandName.STOP;
 public class HelpCommand implements Command{
 
     private final SendBotMessageService sendBotMessageService;
-
+    //TODO code formatting ctrl + alt + L , and remove double empty lines
 
     public static final String HELP_MESSAGE = String.format("✨<b>Дотупные команды</b>✨\n\n"
 

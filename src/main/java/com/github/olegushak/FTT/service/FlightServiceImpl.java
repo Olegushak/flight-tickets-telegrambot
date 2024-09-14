@@ -20,7 +20,7 @@ public class FlightServiceImpl implements FlightService {
 
     private final DtoMapper dtoMapper;
 
-    @Autowired
+    @Autowired //TODO change on @RequiredArgsConstructor
     public FlightServiceImpl(FlightRepository flightRepository, TelegramUserService telegramUserService, DtoMapper dtoMapper) {
         this.flightRepository = flightRepository;
         this.telegramUserService = telegramUserService;
@@ -29,6 +29,7 @@ public class FlightServiceImpl implements FlightService {
 
     @Override
     public void save(String chatId, ItineraryDto itinerary,String token) {
+        //TODO use your own exceptions, now NotFoundException from some library
         TelegramUser user = telegramUserService.findByChatId(chatId).orElseThrow(NotFoundException::new);
 
         Flight flightToSave;

@@ -13,6 +13,7 @@ import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 abstract public class AbstractCommandTest {
+    //TODO interesting idea to extrapolate tests using abstract class)) lets make one @ParametrizedTest
 
     protected FlightTicketsFinderBot flightTicketsFinderBot = Mockito.mock(FlightTicketsFinderBot.class);
     protected TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);

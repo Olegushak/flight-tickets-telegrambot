@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-@AllArgsConstructor
+@AllArgsConstructor // TODO do you need both constructors?
 @NoArgsConstructor
 public class DestinationDto {
 

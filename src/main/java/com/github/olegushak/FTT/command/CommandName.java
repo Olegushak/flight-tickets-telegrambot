@@ -15,7 +15,7 @@ public enum CommandName {
     SHARE_LOCATION("/share location"),
     UPDATE_LOCALISATIONS("/update_localisations"),
     UPDATE_AIRPORTS("/update_airports");
-   // FLIGHT_HISTORY("завершенные перелеты"),
+   // FLIGHT_HISTORY("завершенные перелеты"), TODO remove?
   //  ALL_FLIGHTS("мои перелеты"),
   //  MAIN("главное меню");
 

@@ -13,7 +13,7 @@ public class UnirestConfig {
 
     private final UnirestProperties unirestProperties;
 
-    @Value("${rapid.api.host}")
+    @Value("${rapid.api.host}") // TODO Use properties class
     private String rapidApiHost;
 
     @Autowired

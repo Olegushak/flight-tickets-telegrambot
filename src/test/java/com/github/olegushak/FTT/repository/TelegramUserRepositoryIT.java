@@ -55,7 +55,7 @@ public class TelegramUserRepositoryIT extends WebIntegrationTest {
 
         Assertions.assertTrue(saved.isPresent());
         Assertions.assertEquals(telegramUser,saved.get());
-
+//TODO remove empty lines
     }
 
     @Test
@@ -64,7 +64,7 @@ public class TelegramUserRepositoryIT extends WebIntegrationTest {
         user.setChatId("123456789");
         user.setActive(true);
         user.setFlights(new ArrayList<>());
-
+//TODO long rows + code formatting
         Flight flight = new Flight("15083-2402151840--30858,-31825-1-14355-2402160020","HAN","Vietnam","Hanoi","SGN","Vietnam","Ho Chi Minh City","2024-02-15T18:40:00","2024-02-15T20:40:00",120,"$600","eyJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiUEFSSSIsImQiOiJNU1lBIiwiZDEiOiIyMDI0LTAyLTE1In0=",new ArrayList<>());
         flight.addUser(user);
         Flight flight1 = new Flight("15083-2402191150--31058,-31821-1-14666-2402160908","HAN","Vietnam","Hanoi","KJA","Russia","Krasnoyarsk","2024-02-18T18:30:00","2024-06-18T21:30:00",180,"$300","ImJhIjoxLCJjIjowLCJpIjowLCJjYyI6ImVjb25vbXkiLCJvIjoiUEFSSSIsImQiOiJNU1lBIiwiZDEiOiIyMDI0AHAyLTE1In0=",new ArrayList<>());

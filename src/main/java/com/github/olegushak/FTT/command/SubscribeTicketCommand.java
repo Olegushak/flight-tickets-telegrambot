@@ -19,7 +19,7 @@ public class SubscribeTicketCommand implements Command{
         this.flightService = flightService;
     }
 
-    @Override
+    @Override //TODO remove?
     public void execute(Update update) {
 //        if (getMessage(update).equalsIgnoreCase(SUBSCRIBE_TICKET.getCommandName())) {
 //            sendFlightSubscribed(getChatId(update));

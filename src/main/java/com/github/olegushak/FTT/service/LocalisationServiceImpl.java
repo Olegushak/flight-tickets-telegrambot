@@ -26,6 +26,11 @@ public class LocalisationServiceImpl implements LocalisationService{
     @Override
     public void saveAll(List<LocalisationDto> localisations) {
         localisations.stream().map(dtoMapper::localisationDtoToEntity).forEach(localisationRepository::save);
+        /* TODO use this way of code formatting. It is more readable.
+        localisations.stream()
+            .map(dtoMapper::localisationDtoToEntity)
+            .forEach(localisationRepository::save);
+         */
     }
 
     @Override
